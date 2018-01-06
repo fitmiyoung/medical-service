@@ -1,9 +1,13 @@
+body {
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+
 .m-nav {
   min-height: 108px;
   padding-top: 45px;
   background-color: #0D47A1;
 }
-
 
 
 .navbar-default .navbar-nav>li>a {
@@ -19,3 +23,105 @@
 	color: white;
 
 }
+
+
+
+.m-content {
+  min-height: 682px;
+
+}
+
+
+.m-search {
+  min-height: 46px;
+  margin-bottom: 27px;
+/*  background-color: red;
+*/
+}
+
+
+
+/* 검색 창 */
+.m-search > .form-control {
+	width: 290px;
+	float: right;
+	margin-top: 11px;
+}
+
+/*tables restyle*/
+.table {
+	border-color: #EFF1F3;
+}
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 2.65;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #B7B7B7;
+/*    background-color: yellow;
+*/
+}
+
+table > tbody {
+	color: #636363;
+}
+
+.btn {
+	font-size: 16px;
+	background-color: #6DC930;
+	border-color: none;
+	padding: 12px 62px;
+}
+
+
+.m-pagination {
+	text-align: center;
+}
+
+.m-footer {
+	background-color: #0D47A1;
+/*  min-height: 170px;*/
+	padding: 70px 0px 70px 0px;
+	color: white;
+
+}
+.m-footer span, 
+.m-footer h6 {
+	opacity: 0.5;
+}
+
+footer img {
+/*	float: right;*/
+	vertical-align: middle;
+}
+
+.col-xm-12 > img{
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+/*.m-td {
+	max-width: 106px;
+}*/
+
+/*icon-font*/
+.fa {
+	color: gray;
+	padding-right: 5px;
+}
+
+/*table {
+    table-layout: fixed;
+    word-wrap: break-all;
+}
+
+.m-table-etc {
+	width:5%;
+}*/
