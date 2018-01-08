@@ -38,11 +38,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button> -->
-          <a class="navbar-brand " id="m-brand" href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 헤테로 빅테이터 기반 바이오 의료 이미지 인포매틱스</a>
+          <a class="navbar-brand " href="list.html">
+          <img src="img/logo.png">
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li><a href="#about">목록으로</a></li>
+            <li><a href="#about"><i class="fa fa-bars" aria-hidden="true"></i>목록으로</a></li>
              <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -57,7 +58,7 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class=" "><a href="./">삼성의료원 관리자 <span class="sr-only">(current)</span></a></li>
+            <li class=" "><a href="./">삼성의료원 관리자 <span class="sr-only">(current)</span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -66,8 +67,8 @@
     <div class="container">
       <div class="row">
 
-        <!-- left nav -->
-        <div class="col-md-2 m-content m-sub-nav">
+        <!-- left nav; m-content: min-height 삭제 -->
+        <div class="col-md-2 m-sub-nav ">
         <!-- person info -->
           <div class="m-person">
             <ul class="list-group">
@@ -103,9 +104,7 @@
                 <ol class="breadcrumb">
                   <li><a href="#">환자이름</a></li>
                   <li><a href="#">업로드</a></li>
-
                 </ol>
-
               </div>
             </div>
           <!-- data contents -->
@@ -117,17 +116,56 @@
               <div class=" m-upload-box"> 
                 <input type="file" value="파일 업로드" class="upload">  
               </div>
+            <!--업로드 히스토리 목록 -->
             <h4>  업로드 히스토리</h4>
-              <div class="list-group">
-                <a href="#" class="list-group-item active">
-                  <h4 class="list-group-item-heading">List group item heading</h4>
-                  <p class="list-group-item-text">ttext text</p>
-                </a>
-                <a href="#" class="list-group-item ">
-                  <h4 class="list-group-item-heading">List group item heading</h4>
-                  <p class="list-group-item-text">ttext text</p>
-                </a>
-              </div>             
+              <!-- 미완료 목록목록 -->
+              <!-- 링크: daum.net -> 파일 펼치기 
+              링크: naver.com -> 처리 결과  -->
+              <div class="row m-history">
+                <div class="col-md-9">
+                  <h4 class="list-group-item-heading">업로드 파일: example_image_version_03.tif 
+                      <!-- 파일열기 토글 버튼 -->
+                      <label for="toggle">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
+                      <input type="checkbox" id="toggle"/>
+
+                      <ul id="m-fileopen" >
+                      <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
+                      <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
+                      <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
+                      <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
+                      </ul>
+                  </h4>
+                  <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
+                </div>
+
+                <div class="col-md-3 ">
+                  <h5>미완료</h5>
+                  <button type="button" class=" btn-default" onclick=location.href="https://www.naver.com/"><i class="fa fa-play-circle" aria-hidden="true"></i>처리</button>
+                </div>
+              </div>  
+              <!-- 완료 -->
+              <div class="row m-history">
+                <div class="col-md-9" )>
+                  <h4 class="list-group-item-heading">업로드 파일: example_image_version_03.tif                   
+                      <label for="toggle-fin">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
+                      <input type="checkbox" id="toggle-fin"/>
+
+                      <ul id="m-fileopen-fin" >
+                        <li>filename-past.tif </li>
+                        <li>filename-past.tif </li>
+                        <li>filename-past.tif </li>
+                        <li>filename-past.tif </li>
+                      </ul>
+                  </h4>
+                  <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
+                </div>
+
+                <div class="col-md-3 ">
+                  <h5>완료</h5>
+                  <button type="button" class=" btn-default" onclick=location.href="https://www.naver.com/"><i class="fa fa-play-circle" aria-hidden="true"></i>처리 결과</button>
+                </div>
+              </div>  
+
           </div>  
 
 
@@ -144,7 +182,10 @@
       <div class="container">
         <div class="row"> 
           <div class="col-md-6 col-xm-12">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><h6>헤테로 빅테이터 기반 바이오 의료 이미지 인포매틱스</h6>
+            <!-- <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><h6>헤테로 빅테이터 기반 바이오 의료 이미지 인포매틱스</h6> -->
+            <a class="navbar-brand " href="list.html">
+            <img src="img/logo.png"> <h5>&copy;Copyright 2018</h5></a>
+
           </div>
           <div class="col-md-6 col-xm-12">
             <img src="img/logo_univ.png">

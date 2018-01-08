@@ -6,6 +6,7 @@ body {
 .m-sub-nav {
 	background-color: #F7F7F7;
 	padding: 0px;
+	padding-bottom: 166px;
 }
 
 
@@ -114,3 +115,57 @@ input[type=file] {
 	margin-top: 3px;
 	opacity: 0.3;
 }
+
+div[onclick],
+i[onclick] {
+	cursor: pointer;
+}
+
+
+/*.media-right,
+.media > .pull-right {
+  padding-left: 100px;
+  margin-left:100px; 
+}
+*/
+/*히스토리 목록 */
+
+.m-history {
+	margin: 0px;
+}
+.m-history {
+	border: 1px solid gray;
+	padding: 10px;
+}
+
+.m-history .col-md-3{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+#m-fileopen, #m-fileopen-fin {
+	margin:0;
+	padding:0;
+	list-style: none;
+	display: inline;
+} 
+
+#m-fileopen li,
+#m-fileopen-fin li{
+	display:block;
+	color: red;
+	font-size: 14px;
+}
+
+#m-fileopen, #toggle,
+#m-fileopen-fin, #toggle-fin {
+	display:none;
+} 
+
+#toggle:checked + #m-fileopen,
+#toggle-fin:checked + #m-fileopen-fin {
+	display: inline;
+}
+
+
