@@ -123,6 +123,10 @@ table th {
 /*icon-font*/
 .fa {
 	padding-right: 5px;
+
+}
+td i {
+  color: #B8B8B8;
 }
 
 
