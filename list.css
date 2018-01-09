@@ -3,11 +3,18 @@ body {
   padding-bottom: 0px;
 }
 
+
 .m-nav {
   min-height: 108px;
   padding-top: 35px;
   background-color: #0D47A1;
 }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #1F6DE8;
+  background-color: transparent;
+}
+
 .navbar-default .navbar-nav>li>a {
 	color: #fff;
 }
