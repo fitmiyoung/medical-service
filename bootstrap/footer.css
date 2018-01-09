@@ -1,4 +1,11 @@
 /*footer*/
+/*하단고정*/
+.footer {
+	width: 100%;
+    position:absolute;
+    bottom:0;
+}
+
 .m-footer {
 	background-color: #0D47A1;
 /*  min-height: 170px;*/

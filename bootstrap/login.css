@@ -46,21 +46,35 @@ html {
     }
 }
 .item:nth-child(1) {
-    background: url(https://ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866) no-repeat center center fixed;
+    background: url(img/1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .item:nth-child(2) {
-    background: url(https://ununsplash.imgix.net/reserve/oY3ayprWQlewtG7N4OXl_DSC_5225-2.jpg?q=75&fm=jpg&s=85ab821f3fa535036a68155aab571bad) no-repeat center center fixed;
+    background: url(img/2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .item:nth-child(3) {
-    background: url(https://unsplash.imgix.net/photo-1414073875831-b47709631146?q=75&fm=jpg&s=731b6d5150eea8bafa63ae8194e72ebd) no-repeat center center fixed;
+    background: url(img/3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(4) {
+    background: url(img/4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(5) {
+    background: url(img/0.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -85,9 +99,7 @@ html {
 
 /*login*/
 
-/*.inner-bg {
-    padding: 100px 0 170px 0;
-}*/
+
 
 /*.top-content .text {
 	color: #fff;
@@ -107,8 +119,15 @@ html {
 .top-content .description a:hover, 
 .top-content .description a:focus { border-bottom: 1px dotted #fff; }*/
 
+/*.inner-bg {
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}*/
 .form-box {
-	margin-top: 10%;
+	margin-top: 6%;
 }
 
 .form-top {
@@ -126,34 +145,15 @@ html {
 	margin-right: auto;
 }
 
-/*.form-top-left {
-	float: left;
-	width: 75%;
-	padding-top: 25px;
-}*/
-
-/*.form-top-left h3 { margin-top: 0; color: #fff; }
-.form-top-left p { opacity: 0.8; color: #fff; }
-*/
-
-/*.form-top-right {
-	float: left;
-	width: 25%;
-	padding-top: 5px;
-	font-size: 66px;
-	color: #fff;
-	line-height: 100px;
-	text-align: right;
-	opacity: 0.3;
-}*/
 .form-bottom {
-	padding: 48px 48px 148px 48px;
+	/*padding: 48px 48px 280px 48px;*/
+	padding: 39px 9% 73% 9%;
 	max-width: 100%;
 	height: auto;
 	background: #444;
 	background: rgba(0, 0, 0, 0.35);
 	text-align: left;
-	/*margin-bottom: 10%;*/
+
 }
 .form-bottom form textarea {
 	height: 100px;
@@ -207,6 +207,8 @@ footer img {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 .footer {
 	width: 100%;
