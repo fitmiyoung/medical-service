@@ -54,24 +54,62 @@ body {
 .table {
 	border-color: #EFF1F3;
 }
-
-
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     padding: 8px;
     line-height: 2.65;
     vertical-align: middle;
     border-bottom: 1px solid #ddd;
 }
-
 .table>thead>tr>th {
     vertical-align: bottom;
     border-bottom: 1px solid #B7B7B7;
 /*    background-color: yellow;
 */
 }
-
 table > tbody {
 	color: #636363;
+}
+table th {
+  font-size: 12px;
+}
+#icon-yet {
+  background-color: #0057A7;
+  padding: 3px;
+  border-radius: 2px;
+  margin-right: 5px;
+  color: white;
+  font-size: 11px;
+}
+.yet {
+  color: #0057A7;
+  font-size: 13px;
+  font-weight: bold;
+}
+#icon-done {
+  background-color: #43A047;
+  padding: 3px;
+  border-radius: 2px;
+  margin-right: 5px;
+  color: white;
+  font-size: 11px;
+}
+.done {
+  color: #43A047;
+  font-size: 13px;
+  font-weight: bold;
+}
+#icon-nofile {
+  background-color: #9E9E9E;
+  padding: 3px;
+  border-radius: 2px;
+  margin-right: 5px;
+  color: white;
+  font-size: 11px;
+}
+.nofile {
+  color: #9E9E9E;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 
@@ -227,5 +265,5 @@ colgroup .col-md-0 {
  	width: 9%;
  }
 colgroup .col-md-a {
- 	width: 3.345%;
+ 	width: 3.9%;
  }
