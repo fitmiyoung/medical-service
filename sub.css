@@ -1,17 +1,29 @@
 body {
   padding-top: 108px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
-
-
+/*#m-list-footer {
+    position:absolute;
+    bottom:0;
+}*/
 /*상단 서브 메뉴*/
-
 .m-sub-menu {
 	background-color: #0F52BB; 
 	/*padding: 14px;	*/
 	height: 68px;
 	font-size: 16px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
 }
+/*.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}*/
 .navbar-default {
     background-color: #0D47A1;
     border-color: #0D47A1; 
@@ -42,7 +54,7 @@ body {
 */
 /*m-sub-head 서브화면의 타이틀, 환자정보, 탭, breadcrumbs*/
 .m-sub-head {
-	padding-top: 40px;
+	padding-top: 100px;
 }
 .m-sub-head > .m-person {
 	padding: 8px 0 14px 0;
@@ -94,23 +106,48 @@ body {
 	color: #0D47A1;
 }
 .m-upload-box {
-	width: 70%;
-	height: 150px;
+	width: 83%;
+	height: 120px;
 	border: 1px;
-	background-color: blue;
+	background-color: ;
+	border: 1px solid #dddddd;
 }
-
-
+.m-upload-box > input[type="submit"] {
+/*	width: 250px;
+	height: 40px;
+	color: gray;
+	background-color: white;
+	border-radius: 3px;*/
+	float: right;
+}
+.btn {
+	width: 125px;
+	font-size: 14px;
+	background-color: gray;
+	border-color: none;
+	padding: 10px 30px 10px 30px;
+	margin: 10px;
+}
 input[type=file] {
   width: 500px;
-  height: 40px;
+ /* height: 40px;*/
+  padding: 20px;
   border-radius: 3px;
   font-weight: 400;
   border-color: transparent;
-  font-size: 25px;
-  background: gray;
-  color: #fff;
-  cursor: pointer;	
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  /*background-color: gray;	*/
+}
+input[type="file"] {
+    /*display: none;*/
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 
@@ -160,8 +197,6 @@ i[onclick] {
 
 .m-history {
 	margin: 0px;
-}
-.m-history {
 	border: 1px solid gray;
 	padding: 10px;
 }
@@ -170,7 +205,6 @@ i[onclick] {
   display: flex;
   justify-content: flex-end;
 }
-
 
 #m-fileopen, #m-fileopen-fin {
 	margin:0;
@@ -196,4 +230,6 @@ i[onclick] {
 	display: inline;
 }
 
-
+.m-sub-content {
+	margin-bottom: 80px;
+}
