@@ -84,50 +84,34 @@
       <!-- 환자 정보 -->
       <div class="nav nav-pills m-person">
         <ul class="list-group">
-          <li class="list-group-item"><i class="fa fa-user-o" aria-hidden="true"></i> name 
+          <li class="list-group-item"><i class="fa fa-user-circle-o" aria-hidden="true"></i>환자이름 
           </li> 
           <li class="list-group-item"><i class="fa fa-birthday-cake" aria-hidden="true"></i> 1994/01/01 </li>
           <li class="list-group-item"><i class="fa fa-venus-mars" aria-hidden="true"></i>여자 </li>
           <li class="list-group-item"><i class="fa fa-h-square" aria-hidden="true"></i> 삼성서울병원 </li>
           <li class="list-group-item"><i class="fa fa-pencil" id="m-fa" aria-hidden="true"></i></li>
         </ul>
-       </div> 
+      </div> 
        <!--tabs-->
-        <div class="row">
-          <div class="col-md-10 ">
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-12 "> -->
             <ul class="nav nav-tabs">
               <li role="presentation" class="active"><a href="#">업로드</a></li>
               <li role="presentation"><a href="#">처리결과</a></li>
             </ul>
-          </div>
+          <!-- </div> -->
          <!--  breadcrumbs --> 
-        <div class="col-md-2">
+        <!-- <div class="row"> -->
           <ol class="breadcrumb">
             <li><a href="#">환자이름</a></li>
+            <li><a href="#">Cell Microscope</a></li>
             <li><a href="#">업로드</a></li>
           </ol>
-        </div>
-      </div>
+        <!-- </div> -->
+     <!--  </div> -->
      </div>
-
      <!-- 2. contents -->
      <div class="container m-sub-content">
-<!--               <h4>
-        What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-      </h4> -->
        <!-- 2.1 영상 파일 업로드  -->
        <h5><i class="fa fa-picture-o" aria-hidden="true"></i>영상 파일 업로드</h5>
        <!-- <div class=" m-upload-box"> 
@@ -139,41 +123,22 @@ There are many variations of passages of Lorem Ipsum available, but the majority
           <input class="btn btn-primary" type="submit" value="처리">
        </form> -->
        <form action="#" class="m-upload-box"> 
-          <label for="file-upload" class="custom-file-upload">
+<!--           <label for="file-upload" class="custom-file-upload">
               <i class="fa fa-cloud-upload"></i> 영상 파일 찾아보기 
-          </label>
+          </label> -->
           <input id="file-upload" type="file" name="pic"> 
-          <input class="btn btn-primary" type="submit" value="임시 저장">
-          <input class="btn btn-primary" type="submit" value="처리">
+          <input class="btn btn-primary" id="btn-save" type="submit" value="임시 저장">
+          <input class="btn btn-primary" id="btn-process" type="button" value="처리">
        </form> 
        <!-- 2.2 히스토리  -->
        <h5><i class="fa fa-history" aria-hidden="true"></i>업로드 히스토리 </h5>  
        <!-- 미완료 목록목록 -->
-      <div class="row m-history">
-        <div class="col-md-9">
-          <h4 class="list-group-item-heading">업로드 파일: example_image_version_03.tif 
-              <!-- 파일열기 토글 버튼 -->
-              
-              <label for="toggle">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
-              <input type="checkbox" id="toggle"/>
-              <ul id="m-fileopen" >
-              <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
-              <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
-              <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
-              <li>filename.tif  <button type="button" class=" btn-default"><i class="fa fa-minus-square-o" aria-hidden="true"></i>삭제</button></li> 
-              </ul>
-          </h4>
-          <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
-        </div>
-
-        <div class="col-md-3 ">
-          <h5>미완료</h5>
-          <button type="button" class=" btn-default" onclick=location.href="https://www.naver.com/"><i class="fa fa-play-circle" aria-hidden="true"></i>처리</button>
-        </div>
-      </div>  
-      <!-- 완료 -->
-      <div class="row m-history">
-        <div class="col-md-9" )>
+      <!-- 미완료 -->
+      <div class="row m-history bg-yet yet">
+        <div class="col-xs-2">
+          <h5><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</h5>
+        </div>        
+        <div class="col-xs-7">
           <h4 class="list-group-item-heading">업로드 파일: example_image_version_03.tif                   
               <label for="toggle-fin">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
               <input type="checkbox" id="toggle-fin"/>
@@ -186,12 +151,35 @@ There are many variations of passages of Lorem Ipsum available, but the majority
           </h4>
           <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
         </div>
-        <div class="col-md-3 ">
-          <h5>완료</h5>
-          <button type="button" class=" btn-default" onclick=location.href="https://www.naver.com/"><i class="fa fa-play-circle" aria-hidden="true"></i>처리 결과</button>
+        <div class="col-xs-3 ">      
+          <button type="button" class="btn-blue btn-primary" onclick=location.href="https://www.naver.com/"><i class="fa fa-play-circle" aria-hidden="true"></i>처 리</button>
         </div>
        </div>  
-      </div>         
+           
+      <!-- 완료2 -->
+      <div class="row m-history bg-done done">
+        <div class="col-xs-2">
+          <h5><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</h5>
+        </div>        
+        <div class="col-xs-7">
+          <h4 class="list-group-item-heading">업로드 파일: example_image_version_04.tif                   
+              <label for="toggle-fin">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
+              <input type="checkbox" id="toggle-fin"/>
+              <ul id="m-fileopen-fin" >
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+              </ul>
+          </h4>
+          <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
+        </div>
+        <div class="col-xs-3 ">      
+          <button type="button" class="btn-green btn-primary" onclick=location.href="https://www.naver.com/"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리 결과</button>
+        </div>
+       </div>  
+      </div> 
+     </div>  
        <!-- 2.2 히스토리 end -->
      </div> <!-- 2. contents end -->
 
