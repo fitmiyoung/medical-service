@@ -34,9 +34,14 @@ footer .navbar-brand {
 }
 footer img {
 	vertical-align: middle;
+	max-width: 100%;
+	position: relative;
 }
 .col-xm-12 > img{
 	display: block;
 	margin: auto;
 	width: 80%;
+}
+.m-footer h6 {
+	color: #86A3D0;
 }
