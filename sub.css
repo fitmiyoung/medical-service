@@ -154,6 +154,7 @@ body {
 	padding: 10px 30px 10px 30px;
 	color: #1F6DE8;	
 	border-radius: 3px;
+	margin-left: 20px
 }
 .btn-blue {
 	width: 200px;
@@ -163,6 +164,7 @@ body {
 	padding: 10px 30px 10px 30px;
 	color: white;	
 	border-radius: 3px;
+	margin-left: 20px	
 }
 .btn-lightgreen {
 	width: 200px;
@@ -171,7 +173,8 @@ body {
 	border-color: #43A047;
 	padding: 10px 30px 10px 30px;
 	color: #43A047;	
-	border-radius: 3px;	
+	border-radius: 3px;
+	margin-left: 20px		
 }
 .btn-green {
 	width: 200px;
@@ -180,12 +183,13 @@ body {
 	border-color: #43A047;
 	padding: 10px 30px 10px 30px;
 	color: white;	
-	border-radius: 3px;	
+	border-radius: 3px;
+	margin-left: 20px		
 }
 .btn-lightgray {
 	width: 200px;
 	font-size: 16px;
-	background-color: white;
+	background-color: #F2F2F2;
 	border-color: #ccc;
 	padding: 10px 30px 10px 30px;
 	color: #5D5955;	
@@ -206,13 +210,12 @@ form > .btn {
 	color: white;	
 }
 #btn-process:hover,
-#btn-save:hover,
 #btn-process:focus,
-#btn-save:focus,
 .btn:focus,
 .btn.focus {
-  color: white;
-  background-color: #0D47A1
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
 }
 
 input[type=file] {
@@ -352,9 +355,6 @@ i[onclick] {
 .m-sub-content {
 /*	margin-bottom: 80px;*/
 }
-.m-sub-content .input-group {
-	margin-bottom: 12px;
-}
 .m-sub-content h5 {
 	font-size: 16px;
 	padding-bottom: 22px;
@@ -367,8 +367,10 @@ i[onclick] {
 	padding-top: 80px;
 	padding-bottom: 0px;
 }
-.m-profile-button {
+.m-profile-submit {
 	float: right;
+	padding-left: 20px;
+	padding-right: 15px;
 }
 .m-profile-data {
 	border: 1px solid #cccccc;
@@ -405,4 +407,21 @@ i[onclick] {
 	border-left: 0;
 	border-right: 0;
 	border-bottom: 0;
+}
+.radio-inline {
+	padding-top: 8px;
+}
+.col-md-2 > h4 {
+	font-size: 14px;
+	color: #0D47A1;
+	text-align: right;
+} 
+.m-sub-content .input-group {
+	margin-bottom: 18px;
+}
+#basic-addon1 {
+	width: 34px;
+}
+.input-group-addon > i {
+	width: 14px;
 }

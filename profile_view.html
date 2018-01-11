@@ -67,52 +67,56 @@
     </nav>
   <!-- top-content -->
     <div class="container m-profile m-sub-content ">
-      <h5><i class="fa fa-picture-o" aria-hidden="true"></i>영상 파일 업로드</h5>  
+      <h5><i class="fa fa-info-circle" aria-hidden="true"></i>기본 정보</h5>  
       <div class="m-upload-box">  
       <!-- 환자 정보 -->
          <div class="row">
-            <div class="col-md-6">
-                <div class="input-group">
+            <div class="col-md-8">
+                <div class="col-md-2 col-xs-2">
+                    <h4> 환자 이름</h4>
+                </div>                
+                <div class="col-md-6 col-xs-10 input-group">
                   <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" placeholder="환자이름" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control" placeholder="이름" aria-describedby="basic-addon1">
                 </div>
-                <div class="input-group">
+            </div> <!-- col-md-8 end -->
+            <div class="col-md-8">
+                <div class="col-md-2 col-xs-2">
+                    <h4>생년월일</h4>
+                </div>                
+                <div class="col-md-6 col-xs-10 input-group">
                   <span class="input-group-addon" id="basic-addon1"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" placeholder="생년월일" aria-describedby="basic-addon1">
                 </div>
-                <div class="input-group">
-                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-venus-mars" aria-hidden="true"></i></span>
-                  <input type="" class="form-control" placeholder="성별" aria-describedby="basic-addon1"> -->
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="radio" aria-label="...">
-                          </span>
-                          <input type="text" class="form-control" placeholder="남자" aria-label="...">
-                        </div><!-- /input-group -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-md-6">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="radio" aria-label="...">
-                          </span>
-                          <input type="text" class="form-control" placeholder="여자" aria-label="...">
-                        </div><!-- /input-group -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-h-square" aria-hidden="true"></i> </span>
+            </div> <!-- col-md-8 end -->
+            <div class="col-md-8">
+                <div class="col-md-2 col-xs-2">
+                    <h4>병원</h4>
+                </div>                
+                <div class="col-md-6 col-xs-10 input-group">
+                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-h-square" aria-hidden="true" ></i></span>
                   <input type="text" class="form-control" placeholder="병원" aria-describedby="basic-addon1">
-                </div>           
-            </div><!-- input groups -->
+                </div>
+            </div> <!-- col-md-8 end -->            
+            <div class="col-md-8">
+                <div class="col-md-2 col-xs-2">
+                    <h4> 성별</h4>
+                </div>                
+                <div class="col-md-6 col-xs-10 input-group" for="Gender-0">  
+                    <label class="radio-inline">
+                        <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked"> 남자
+                    </label>
+                    <label class="radio-inline" for="Gender-1">
+                      <input type="radio" name="Gender" id="Gender-1" value="2">여자
+                    </label>
+                </div>
+            </div> <!-- col-md-8 end -->                                           
          </div> <!-- row end -->
          <div class="row">
-            <div class=" m-profile-button">
+            <div class="m-profile-submit">
                 <!-- button 태그로 처리하면 브라우져마다 랜더링을 다르게 해서 a태그로 처리 -->
-                <a herf="#" class="btn btn-lightblue btn-primary"> 임시 저장</a>
-                <a herf="#" class="btn btn-blue btn-primary" >처리 </a>
+                <a herf="#" class="btn btn-blue btn-primary col-xs-6">수정</a>
+                <a herf="#" class="btn btn-lightblue btn-primary col-xs-6">취소</a>
             </div> 
          </div> 
       </div> <!-- m-upload-box end -->
@@ -120,7 +124,7 @@
 
   <!-- bottom contents -->
     <div class="container m-sub-content">
-        <h5><i class="fa fa-history" aria-hidden="true"></i>업로드 히스토리 </h5>  
+        <h5><i class="fa fa-picture-o" aria-hidden="true"></i>영상 정보</h5>  
         <div class="row">
             <div class="col-md-4">
                 <div class="m-profile-data">
