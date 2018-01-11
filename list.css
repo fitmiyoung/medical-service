@@ -24,6 +24,11 @@ body {
 #navbar {
 	padding-top: 7px;
 }
+@media (min-width: 768px) {
+  .navbar-toggle {
+      display: none;
+  }
+}
 .m-content {
   min-height: 682px;
   /*세로 스크롤 무한정 로딩되도록 할 때는 필요없음 , 페이지네이션으로 구현할지에 따라 max-height결정*/

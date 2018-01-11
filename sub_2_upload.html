@@ -27,7 +27,7 @@
 
   </head>
   <body>
-<!-- <div class="container"> --> <!-- 전체를 container로 묶으면 양쪽 여백 불균형 -->
+<!-- <div class="container"> -->
   <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top m-nav">
       <div class="container">
@@ -52,12 +52,18 @@
     <!-- sub menu -->
       <nav class="m-sub-menu">
         <div class="container">
+            <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sub-nav" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> -->
             <ul class="nav nav-pills nav-justified m-menu">
-              <li class="active"><a href="sub_1_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
-              <li><a href="sub_2_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>무형광 영상</a></li>
-              <li><a href="sub_3_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>유전체 발현량</a></li>
-              <li><a href="sub_4_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>판독문</a></li>
-              <li><a href="sub_5_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>MR 영상</a></li>
+              <li class="active"><a href="sub_1.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
+              <li><a href="sub_2.html"><i class="fa fa-picture-o" aria-hidden="true"></i>무형광 영상</a></li>
+              <li><a href="sub_3.html"><i class="fa fa-picture-o" aria-hidden="true"></i>유전체 발현량</a></li>
+              <li><a href="sub_4.html"><i class="fa fa-picture-o" aria-hidden="true"></i>판독문</a></li>
+              <li><a href="sub_5.html"><i class="fa fa-picture-o" aria-hidden="true"></i>MR 영상</a></li>
             </ul>    
         </div>
       </nav>      
@@ -75,23 +81,23 @@
           <li class="list-group-item"><i class="fa fa-birthday-cake" aria-hidden="true"></i> 1994/01/01 </li>
           <li class="list-group-item"><i class="fa fa-venus-mars" aria-hidden="true"></i>여자 </li>
           <li class="list-group-item"><i class="fa fa-h-square" aria-hidden="true"></i> 삼성서울병원 </li>
-          <li class="list-group-item"><a href="profile_view.html"><i class="fa fa-pencil" id="m-fa" aria-hidden="true"></i></a></li>
+          <li class="list-group-item"><i class="fa fa-pencil" id="m-fa" aria-hidden="true"></i></li>
         </ul>
       </div> 
        <!--tabs-->
         <!-- <div class="row"> -->
           <!-- <div class="col-md-12 "> -->
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="sub_1_upload.html">업로드</a></li>
-              <li role="presentation"><a href="sub_1_result.html">처리결과</a></li>
+              <li role="presentation" class="active"><a href="#">업로드</a></li>
+              <li role="presentation"><a href="#">처리결과</a></li>
             </ul>
           <!-- </div> -->
          <!--  breadcrumbs --> 
         <!-- <div class="row"> -->
           <ol class="breadcrumb">
-            <li><a href="list.html">환자이름</a></li>
-            <li>Cell Microscope</li>
-            <li>업로드</li>
+            <li><a href="#">환자이름</a></li>
+            <li><a href="#">Cell Microscope</a></li>
+            <li><a href="#">업로드</a></li>
           </ol>
         <!-- </div> -->
      <!--  </div> -->
@@ -100,13 +106,25 @@
      <div class="container m-sub-content">
        <!-- 2.1 영상 파일 업로드  -->
        <h5><i class="fa fa-picture-o" aria-hidden="true"></i>영상 파일 업로드</h5>
+       <!-- <div class=" m-upload-box"> 
+          <input type="file" value="파일 업로드" class="upload">  
+       </div> -->
+<!--        <form action="#" class="m-upload-box">
+          <input type="file" name="pic">
+          <input class="btn btn-primary" type="submit" value="임시 저장">
+          <input class="btn btn-primary" type="submit" value="처리">
+       </form> -->
        <form action="#" class="m-upload-box"> 
+<!--           <label for="file-upload" class="custom-file-upload">
+              <i class="fa fa-cloud-upload"></i> 영상 파일 찾아보기 
+          </label> -->
           <input id="file-upload" type="file" name="pic"> 
           <input class="btn btn-primary"  type="submit" value="임시 저장">
           <input class="btn btn-primary" id="btn-process" type="button" value="처 리">
        </form> 
-      <!-- 2.2 히스토리  -->
-      <h5><i class="fa fa-history" aria-hidden="true"></i>업로드 히스토리 </h5>  
+       <!-- 2.2 히스토리  -->
+       <h5><i class="fa fa-history" aria-hidden="true"></i>업로드 히스토리 </h5>  
+       <!-- 미완료 목록목록 -->
       <!-- 미완료 -->
       <div class="row m-history bg-yet yet">
         <div class="col-xs-2">
@@ -125,9 +143,8 @@
           </h4>
           <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
         </div>
-        <div class="col-xs-3 ">
-          <!--처리 클릭후 처리중 상태를 나타내는 회전 아이콘 보여주기-->
-          <a class="btn btn-blue btn-primary" onclick=location.href="sub_1_result.html","_self"><i class="fa fa-play-circle" aria-hidden="true"></i>처 리</a> <!-- "_self" 현재창에서 열기 -->
+        <div class="col-xs-3 ">      
+          <a class="btn btn-blue btn-primary" onclick=location.href="https://www.naver.com/"><i class="fa fa-play-circle" aria-hidden="true"></i>처 리</a>
         </div>
        </div>  
            
@@ -138,9 +155,9 @@
         </div>        
         <div class="col-xs-7">
           <h4 class="list-group-item-heading">업로드 파일: example_image_version_04.tif                   
-              <label for="toggle-done">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
-              <input type="checkbox" id="toggle-done"/>
-              <ul id="m-fileopen-done" >
+              <label for="toggle-fin">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
+              <input type="checkbox" id="toggle-fin"/>
+              <ul id="m-fileopen-fin" >
                 <li>filename-past.tif </li>
                 <li>filename-past.tif </li>
                 <li>filename-past.tif </li>
@@ -150,7 +167,7 @@
           <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
         </div>
         <div class="col-xs-3 ">      
-          <a class="btn btn-green btn-primary" onclick=location.href="sub_1_result.html"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리 결과</a>
+          <a class="btn btn-green btn-primary" onclick=location.href="https://www.naver.com/"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리 결과</a>
         </div>
        </div>  
       </div> 
@@ -171,7 +188,7 @@
         </div>
       </div>
     </footer>
-<!-- </div> --> <!-- whole container end for the page -->
+  <!-- </div> --> <!-- whole container end for the page -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,21 +1,34 @@
 body {
-  padding-top: 108px;
-  padding-bottom: 0px;
+  /*전체 화면을 container로 싸서 padding-top 불필요*/
+  /*padding-top: 108px;*/
+  padding-bottom: 30px;
 }
-/*#m-list-footer {
-    position:absolute;
-    bottom:0;
-}*/
 /*상단 서브 메뉴*/
 .m-sub-menu {
 	background-color: #0F52BB; 
-	/*padding: 14px;	*/
-	height: 68px;
+	/*height 지정하면 768px 이하로 메뉴가 stack되지 않음*/
+	/*height: 68px;*/
 	font-size: 16px;
 	position: fixed;
 	right: 0;
 	left: 0;
 	z-index: 1030;
+}
+/*서브 메뉴의 nav-justified 메뉴가 본문을 가리지 않도록 media를 이용함*/
+@media (max-width: 991px) {
+	.m-sub-head {
+		margin-top: 40px;
+	}
+}	
+@media (max-width: 767px) {
+  .m-sub-head {
+  	margin-top: 270px;
+  }
+}
+@media (max-width: 574px) {
+  .m-sub-head {
+  	margin-top: 320px;
+  }
 }
 /*.navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -54,7 +67,8 @@ body {
 */
 /*m-sub-head 서브화면의 타이틀, 환자정보, 탭, breadcrumbs*/
 .m-sub-head {
-	padding-top: 114px;
+	/*메뉴와 콘텐의 간격*/
+	padding-top: 60px;
 }
 .m-sub-head > .m-person {
 	padding: 8px 0 24px 0;
@@ -267,13 +281,17 @@ input[type="file"] {
 
 #m-fa {
 	color: gray;
-	/*float: right;*/
 	margin-top: 3px;
 	opacity: 0.3;
 }
+#m-fa:hover,
+#m-fa:active {
+	color: blue;
+}
 
 div[onclick],
-i[onclick] {
+i[onclick],
+a[onclick] {
 	cursor: pointer;
 }
 
@@ -327,7 +345,7 @@ i[onclick] {
 	padding: 25px;
 /*	margin: 5px;*/
 }
-#m-fileopen, #m-fileopen-fin {
+#m-fileopen, #m-fileopen-fin, #m-fileopen-done {
 	margin:0;
 	padding:0;
 	list-style: none;
@@ -335,7 +353,8 @@ i[onclick] {
 } 
 
 #m-fileopen li,
-#m-fileopen-fin li{
+#m-fileopen-fin li,
+#m-fileopen-done li {
 	display:block;
 	color: black;
 	font-size: 15px;
@@ -343,12 +362,14 @@ i[onclick] {
 }
 
 #m-fileopen, #toggle,
-#m-fileopen-fin, #toggle-fin {
+#m-fileopen-fin, #m-fileopen-done,
+#toggle-fin, #toggle-done {
 	display:none;
 } 
 
 #toggle:checked + #m-fileopen,
-#toggle-fin:checked + #m-fileopen-fin {
+#toggle-fin:checked + #m-fileopen-fin,
+#toggle-done:checked + #m-fileopen-done {
 	display: inline;
 }
 
@@ -364,7 +385,7 @@ i[onclick] {
 	margin-bottom: 30px;
 }
 .m-profile {
-	padding-top: 80px;
+	padding-top: 27px;
 	padding-bottom: 0px;
 }
 .m-profile-submit {
