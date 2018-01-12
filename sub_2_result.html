@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>바이오 의료 이미지 인포매틱스</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- icon font: fontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- m's custom style -->
+    <link href="list.css" rel="stylesheet">
+    <link href="sub.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+
+  </head>
+  <body>
+<!-- <div class="container"> --> <!-- 전체를 container로 묶으면 양쪽 여백 불균형 -->
+  <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top m-nav">
+      <div class="container">
+        <div class="navbar-header">
+        <!--  화면 사이즈 줄어들 때, 토글 버튼 생성: 네비게이션  -->
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand " href="list.html">
+          <img src="img/logo.png" class="img-responsive"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="list.html"><i class="fa fa-bars" aria-hidden="true"></i>목록으로</a></li>
+            <li class=""><a href="./">삼성의료원 관리자 <span class="sr-only">(current)</span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    <!-- sub menu -->
+      <nav class="m-sub-menu">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified m-menu">
+              <li class="active"><a href="sub_1_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
+              <li><a href="sub_2_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>무형광 영상</a></li>
+              <li><a href="sub_3_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>유전체 발현량</a></li>
+              <li><a href="sub_4_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>판독문</a></li>
+              <li><a href="sub_5_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>MR 영상</a></li>
+            </ul>    
+        </div>
+      </nav>      
+    </nav>
+
+    <!-- head & contents -->
+    <!-- 1. head -->
+    <div class="container m-sub-head">
+      <h1 class=""> Cell Microscope</h1>
+      <!-- 환자 정보 -->
+      <div class="nav nav-pills m-person">
+        <ul class="list-group">
+          <li class="list-group-item"><i class="fa fa-user-circle-o" aria-hidden="true"></i>환자이름 
+          </li> 
+          <li class="list-group-item"><i class="fa fa-birthday-cake" aria-hidden="true"></i> 1994/01/01 </li>
+          <li class="list-group-item"><i class="fa fa-venus-mars" aria-hidden="true"></i>여자 </li>
+          <li class="list-group-item"><i class="fa fa-h-square" aria-hidden="true"></i> 삼성서울병원 </li>
+          <li class="list-group-item"><a href="profile_view.html"><i class="fa fa-pencil" id="m-fa" aria-hidden="true"></i></a></li>
+        </ul>
+      </div> 
+       <!--tabs-->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-12 "> -->
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="sub_2_upload.html">업로드</a></li>
+              <li role="presentation"><a href="sub_2_result.html">처리결과</a></li>
+            </ul>
+          <!-- </div> -->
+         <!--  breadcrumbs --> 
+        <!-- <div class="row"> -->
+          <ol class="breadcrumb">
+            <li><a href="list.html">환자이름</a></li>
+            <li>Cell Microscope</li>
+            <li>업로드</li>
+          </ol>
+        <!-- </div> -->
+     <!--  </div> -->
+     </div>
+     <!-- 2. contents -->
+     <div class="container m-sub-content">
+       <!-- 2.1 영상 파일 업로드  -->
+       <h6><i class="fa fa-check" aria-hidden="true"></i>처리 시간: 8:30 2018.01.12</h6>
+       <!-- 콘텐츠 영역 -->
+       <!-- 이미지 영역 -->
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <div class="thumbnail">
+                <img src="img/무형광_example.png" alt="Cell Microscope">
+                <div class="caption">
+                  <p>Input<a href=""><i class="fa fa-search-plus fa-x3" aria-hidden="true"></i></a></p> 
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="thumbnail">
+                <img src="img/무형광_example2.png" alt="Cell Microscope">
+                <div class="caption">
+                  <p>Output<a href=""><i class="fa fa-search-plus fa-x3" aria-hidden="true"></i></a></p> 
+                </div>
+              </div>
+            </div>            
+          </div><!-- row end --><!-- 이미지 영역 end--> 
+          <div class="container chart">
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3" id="chart">상관관계 그래프</div>
+            </div>  
+          </div>           
+          <h4> Analysis graph is previously calculated to visualize the similarity between generated output and ground-truth</h4>      
+    </div> <!-- 2. contents end -->
+   <!-- footer id="m-list-footer"-->
+    <footer class="footer m-footer" >
+      <div class="container">
+        <div class="row"> 
+          <div class="col-md-6 col-xs-6">
+            <img src="img/logo.png" class="img-responsive">
+            <h6>&copy;Copyright 2018</h6>
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <img src="img/logo_univ.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- </div> --> <!-- whole container end for the page -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
