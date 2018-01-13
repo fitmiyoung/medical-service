@@ -82,9 +82,9 @@
         <!-- <div class="row"> -->
           <!-- <div class="col-md-12 "> -->
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="sub_3_upload.html">업로드</a></li>
-              <li role="presentation"><a href="sub_3_result.html">처리결과</a></li>
-            </ul> 
+              <li role="presentation" class="active"><a href="sub_4_upload.html">업로드</a></li>
+              <li role="presentation"><a href="sub_4_result.html">처리결과</a></li>
+            </ul>
           <!-- </div> -->
          <!--  breadcrumbs --> 
         <!-- <div class="row"> -->
@@ -99,118 +99,64 @@
      <!-- 2. contents -->
      <div class="container m-sub-content">
        <!-- 2.1 영상 파일 업로드  -->
-       <h6><i class="fa fa-check" aria-hidden="true"></i>처리 시간: 8:30 2018.01.12</h6>
-       <!-- 콘텐츠 영역 -->
-       <!-- two tables -->
-        <div class="table-responsive">
-              <!-- top table -->
-              <table class="table table-bordered">
-                <colgroup>
-                    <col class="col-md-1 ">
-                    <col class="col-md-1">
-                    <col class="col-md-1">
-                    <col class="col-md-1">
-                    <col class="col-md-1">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th ></th>
-                    <th >HCS_E</th>
-                    <th >HCS_O</th>
-                    <th >RPKM</th>
-                    <th >MRI</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td >GBM10_022T</td>
-                    <td class="success"></td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                  </tr>
-                  <tr>
-                    <td>GBM10_022T23</td>
-                    <td class="active"></td>
-                    <td class="success"></td>
-                    <td class="success"></td>
-                    <td class="success"></td>
-                  </tr>
-                  <tr>
-                    <td>GBM10_022T54</td>
-                    <td class="active"></td>
-                    <td class="success"></td>
-                    <td class="success"></td>
-                    <td class="active"></td>
-                  </tr>
-                  <tr>
-                    <td>GBM13_022T</td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                  </tr>
-                  <tr>
-                    <td >GBM10_022T</td>
-                    <td class="success"></td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                  </tr>
-                  <tr>
-                    <td>GBM10_022T23</td>
-                    <td class="success"></td>
-                    <td class="success"></td>
-                    <td class="success"></td>
-                    <td class="success"></td>
-                  </tr>
-                  <tr>
-                    <td>GBM10_022T54</td>
-                    <td class="active"></td>
-                    <td class="success"></td>
-                    <td class="success"></td>
-                    <td class="active"></td>
-                  </tr>
-                  <tr>
-                    <td>GBM13_022T</td>
-                    <td class="active"></td>
-                    <td class="success"></td>
-                    <td class="active"></td>
-                    <td class="active"></td>
-                  </tr>                               
-                </tbody>
-              </table> <!-- top table end --> 
-              <!-- bottom table -->
-              <div class="table-responsive">
-                    <table class="table table-bordered">
-                      <colgroup>
-                          <col class="col-md-4 ">
-                          <col class="col-md-4 ">
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th>군집 &amp; 군집</th>
-                          <th>군집 유사도 (MoC)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>HCS &amp; 유전체 </td>
-                          <td>0.33</td>
-                        </tr>
-                        <tr>
-                          <td>HCS &amp; MRI </td>
-                          <td>0.99</td>
-                        </tr>
-                        <tr>
-                          <td>유전체 &amp; MRI </td>
-                          <td>0.33</td>
-                        </tr>
-                      </tbody>
-                   </table>
-              </div> <!-- bottom table end-->   
-        </div> <!-- twotable end -->          
-    </div> <!-- 2. contents end -->
+       <h5><i class="fa fa-picture-o" aria-hidden="true"></i>영상 파일 업로드</h5>
+       <form action="#" class="m-upload-box"> 
+          <input id="file-upload" type="file" name="pic"> 
+          <input class="btn btn-primary"  type="submit" value="임시 저장">
+          <input class="btn btn-primary" id="btn-process" type="button" value="처 리">
+       </form> 
+      <!-- 2.2 히스토리  -->
+      <h5><i class="fa fa-history" aria-hidden="true"></i>업로드 히스토리 </h5>  
+      <!-- 미완료 -->
+      <div class="row m-history bg-yet yet">
+        <div class="col-xs-2">
+          <h5><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</h5>
+        </div>        
+        <div class="col-xs-7">
+          <h4 class="list-group-item-heading">업로드 파일: example_image_version_03.tif                   
+              <label for="toggle-fin">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
+              <input type="checkbox" id="toggle-fin"/>
+              <ul id="m-fileopen-fin" >
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+              </ul>
+          </h4>
+          <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
+        </div>
+        <div class="col-xs-3 ">
+          <!--처리 클릭후 처리중 상태를 나타내는 회전 아이콘 보여주기-->
+          <a class="btn btn-blue btn-primary" onclick=location.href="sub_1_result.html","_self"><i class="fa fa-play-circle" aria-hidden="true"></i>처 리</a> <!-- "_self" 현재창에서 열기 -->
+        </div>
+       </div>  
+           
+      <!-- 완료2 -->
+      <div class="row m-history bg-done done">
+        <div class="col-xs-2">
+          <h5><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</h5>
+        </div>        
+        <div class="col-xs-7">
+          <h4 class="list-group-item-heading">업로드 파일: example_image_version_04.tif                   
+              <label for="toggle-done">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
+              <input type="checkbox" id="toggle-done"/>
+              <ul id="m-fileopen-done" >
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+                <li>filename-past.tif </li>
+              </ul>
+          </h4>
+          <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
+        </div>
+        <div class="col-xs-3 ">      
+          <a class="btn btn-green btn-primary" onclick=location.href="sub_1_result.html"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리 결과</a>
+        </div>
+       </div>  
+      </div> 
+     </div>  
+       <!-- 2.2 히스토리 end -->
+     </div> <!-- 2. contents end -->
    <!-- footer id="m-list-footer"-->
     <footer class="footer m-footer" >
       <div class="container">
