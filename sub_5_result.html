@@ -53,11 +53,11 @@
       <nav class="m-sub-menu">
         <div class="container">
             <ul class="nav nav-pills nav-justified m-menu">
-              <li class="active"><a href="sub_1_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
+              <li><a href="sub_1_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
               <li><a href="sub_2_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>무형광 영상</a></li>
               <li><a href="sub_3_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>유전체 발현량</a></li>
               <li><a href="sub_4_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>판독문</a></li>
-              <li><a href="sub_5_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>MR 영상</a></li>
+              <li class="active"><a href="sub_5_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>MR 영상</a></li>
             </ul>    
         </div>
       </nav>      
@@ -66,7 +66,7 @@
     <!-- head & contents -->
     <!-- 1. head -->
     <div class="container m-sub-head">
-      <h1 class=""> Cell Microscope</h1>
+      <h1 class="">MR 영상</h1>
       <!-- 환자 정보 -->
       <div class="nav nav-pills m-person">
         <ul class="list-group">
@@ -82,16 +82,16 @@
         <!-- <div class="row"> -->
           <!-- <div class="col-md-12 "> -->
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="sub_5_upload.html">업로드</a></li>
-              <li role="presentation"><a href="sub_5_result.html">처리결과</a></li>
+              <li role="presentation" ><a href="sub_5_upload.html">업로드</a></li>
+              <li role="presentation" class="active"><a href="sub_5_result.html">처리결과</a></li>
             </ul>
           <!-- </div> -->
          <!--  breadcrumbs --> 
         <!-- <div class="row"> -->
           <ol class="breadcrumb">
             <li><a href="list.html">환자이름</a></li>
-            <li>Cell Microscope</li>
-            <li>업로드</li>
+            <li>MR 영상</li>
+            <li>처리결과</li>
           </ol>
         <!-- </div> -->
      <!--  </div> -->
@@ -101,7 +101,7 @@
        <!-- 2.1 영상 파일 업로드  -->
        <h6><i class="fa fa-check" aria-hidden="true"></i>처리 시간: 8:30 2018.01.12</h6>
        <!-- 콘텐츠 영역 -->
-       <h4>Original images</h4>
+       <h4 class="mr-text">Original images</h4>
        <div class="row">   
           <div class="col-md-3 col-xs-6">
               <div class="thumbnail">
@@ -136,9 +136,10 @@
               </div><!-- thumbnail end -->
           </div>                              
        </div><!-- row end -->
-       <h4>Result image</h4>
+       
        <div class="row">
           <div class="col-md-6">
+            <h4 class="mr-text">Result image</h4>
               <div class="thumbnail">
                 <img src="img/mr_example.png" alt="MR">
                 <div class="caption">
@@ -149,7 +150,7 @@
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-12">
-                <h4>Featrue vectors</h4>
+                <h4 class="mr-text">Featrue vectors</h4>
                 <div class="table-responsive">
                   <!-- top table -->
                   <table class="table table-bordered">
@@ -181,14 +182,18 @@
                   </table>
                 </div>               
               </div>
-              <div class="col-md-12">
-                <h4>Prediction chart</h4> 
-                <div id="chart">One</div>              
+              <div class="col-md-12 chartgroup">
+               <!--  <h4>Prediction chart</h4>  -->
+                    <div id="chart-mr"></div>
+                    <p>챠트 예시로 넣어봤습니다. 교체해주세요.</p>
+                <!-- <div class="chart-blank"> </div>       -->    
               </div>
             </div>                
           </div>
        </div>   
     </div> <!-- 2. contents end -->
+
+
    <!-- footer id="m-list-footer"-->
     <footer class="footer m-footer" >
       <div class="container">
@@ -208,6 +213,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script type="text/javascript" src="chart.js"></script>      
   </body>
 </html>
 

@@ -53,8 +53,8 @@
       <nav class="m-sub-menu">
         <div class="container">
             <ul class="nav nav-pills nav-justified m-menu">
-              <li class="active"><a href="sub_1_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
-              <li><a href="sub_2_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>무형광 영상</a></li>
+              <li><a href="sub_1_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
+              <li class="active"><a href="sub_2_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>무형광 영상</a></li>
               <li><a href="sub_3_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>유전체 발현량</a></li>
               <li><a href="sub_4_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>판독문</a></li>
               <li><a href="sub_5_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>MR 영상</a></li>
@@ -66,7 +66,7 @@
     <!-- head & contents -->
     <!-- 1. head -->
     <div class="container m-sub-head">
-      <h1 class=""> Cell Microscope</h1>
+      <h1 class="">무형광 영상</h1>
       <!-- 환자 정보 -->
       <div class="nav nav-pills m-person">
         <ul class="list-group">
@@ -82,16 +82,16 @@
         <!-- <div class="row"> -->
           <!-- <div class="col-md-12 "> -->
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="sub_2_upload.html">업로드</a></li>
-              <li role="presentation"><a href="sub_2_result.html">처리결과</a></li>
+              <li role="presentation"><a href="sub_2_upload.html">업로드</a></li>
+              <li role="presentation" class="active"><a href="sub_2_result.html">처리결과</a></li>
             </ul>
           <!-- </div> -->
          <!--  breadcrumbs --> 
         <!-- <div class="row"> -->
           <ol class="breadcrumb">
             <li><a href="list.html">환자이름</a></li>
-            <li>Cell Microscope</li>
-            <li>업로드</li>
+            <li>무형광 영상</li>
+            <li>처리결과</li>
           </ol>
         <!-- </div> -->
      <!--  </div> -->
@@ -120,12 +120,19 @@
               </div>
             </div>            
           </div><!-- row end --><!-- 이미지 영역 end--> 
-          <div class="container chart">
+          <div class="container chartgroup">
             <div class="row">
-                <div class="col-xs-6 col-xs-offset-3" id="chart">상관관계 그래프</div>
+                <div class="col-xs-10 col-xs-offset-1" >
+                  <div id="chart-correlation"></div> 
+                  <div class="alert alert-success" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    Analysis graph is previously calculated to visualize the similarity between generated output and ground-truth
+                  </div>
+                </div>
             </div>  
           </div>           
-          <h4> Analysis graph is previously calculated to visualize the similarity between generated output and ground-truth</h4>      
+    
     </div> <!-- 2. contents end -->
    <!-- footer id="m-list-footer"-->
     <footer class="footer m-footer" >
@@ -146,6 +153,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script type="text/javascript" src="chart.js"></script>   
   </body>
 </html>
 

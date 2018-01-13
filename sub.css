@@ -2,6 +2,7 @@ body {
   /*전체 화면을 container로 싸서 padding-top 불필요*/
   /*padding-top: 108px;*/
   padding-bottom: 30px;
+  height: 100%;
 }
 /*상단 서브 메뉴*/
 .m-sub-menu {
@@ -99,8 +100,8 @@ body {
 }
 .breadcrumb {
   float: right;
-  padding: 20px 0px 8px 15px;
-  margin-bottom: 10px;
+  padding: 20px 0px 0px 15px;
+  margin-bottom: 0px;
   list-style: none;
   background-color: #fff;
   border-radius: 4px;
@@ -114,12 +115,12 @@ body {
 	padding-top: 0px;
 	display: inline;
 }
-
+/*환자 정보 사이의 간격 30px로 조정*/
 .list-group-item {
 	border: none;
 	background-color: white;
 	text-align: left;
-	padding: 10px 40px 10px 0px;
+	padding: 10px 30px 10px 0px;
 }
 .m-person i {
 	color: #0D47A1;
@@ -231,7 +232,6 @@ form > .btn {
   background-color: #286090;
   border-color: #204d74;
 }
-
 input[type=file] {
   width: 500px;
  /* height: 40px;*/
@@ -242,8 +242,6 @@ input[type=file] {
   font-size: 14px;
   color: black;
   cursor: pointer;
-
-  /*background-color: gray;	*/
 }
 input[type="file"] {
     /*display: none;*/
@@ -253,57 +251,38 @@ input[type="file"] {
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
-}
-
-
-    
+}    
 .list-group-item:first-child{
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 
  }   
-
-
 .list-group-item:last-child {
 	border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;	
 }
-
 #m-menu a {
 	padding: 18px 24px;
 }
-
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
 	background-color: #8BA5AF;
 }
-
-
-
 #m-fa {
 	color: gray;
 	margin-top: 3px;
 	opacity: 0.3;
+	margin-left: -9px;
 }
 #m-fa:hover,
 #m-fa:active {
 	color: blue;
 }
-
 div[onclick],
 i[onclick],
 a[onclick] {
 	cursor: pointer;
 }
-
-
-/*.media-right,
-.media > .pull-right {
-  padding-left: 100px;
-  margin-left:100px; 
-}
-*/
 /*히스토리 목록 */
- 
 .m-history {
 	margin: 0 0 30px 0;
 	border: 1px solid #cccccc;
@@ -448,10 +427,7 @@ a[onclick] {
 }
 
 /*result 영역*/
-#chart {
-	background-color: gray;
-	height: 300px;
-}
+
 .col-half-offset{
     margin-left: 3.41%
     /*margin-left: 4.166666667%*/
@@ -466,29 +442,54 @@ a[onclick] {
 	float: right;
 } 
 .table>tbody>tr>td.success {
-	background-color: #0e47a1;
+	background-color: #dff0d8;
+	text-align: center;
 }
-/*주의: 환자 목록과 분리해서 사용*/
+.table>tbody>tr>td.success>i {
+	color: #468847;
+}
+.table>tbody>tr>td.active {
+	background-color: #F9F9FB;
+	color: #468847;
+}
+/*주의: 환자 목록(list.html)과 스타일 분리해서 사용*/
 .table {
 	width: auto;
 	max-width: 100%;
     margin-bottom: 50px;
-/*    border: 0;
-    border-left: 0;*/
+    border-color: #ddd;
 } 
-/*.table>tbody>tr>td {
-	padding: 8px;
-    line-height: 2.65;
-    vertical-align: middle;
-     border-bottom: 0; 
-}*/
-/*.table-bordered {
-    border: 1px solid #1f6de8;
-}
-.table-bordered>thead>tr>th {
-    border: 1px solid #1f6de8;
-}*/
+/*table head에 색 채우기:*/
 .table>colgroup+thead>tr:first-child>th {
-    border-bottom: 2px solid #1f6de8;
-    border-top: 1px solid #1f6de8;	
+    border-bottom: 2px solid #ddd;
+    background-color: #eceff9;
+}
+.mr-text{
+	padding-top: 10px;
+}
+
+/*chart css*/
+.chart-blank {
+	/*width: 100%;*/
+	height: 100%;
+	background-color: gray;
+}
+.chartgroup .col-md-2{
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 50px;
+	margin-bottom: 25px; 
+}
+#chart-mr {
+	height: 100%;
+}
+.cell-tag {
+    font-size: 15px;
+    background-color: #f3f7ff;
+    border-color: #d9e3f5;
+    padding: 3px 11px 3px 12px;
+    color: #647298;
+    border-radius: 5px;
+    margin-right: 9px;
+    margin-top: 8px;    
 }

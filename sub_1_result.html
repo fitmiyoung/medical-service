@@ -82,8 +82,8 @@
         <!-- <div class="row"> -->
           <!-- <div class="col-md-12 "> -->
             <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="sub_1_upload.html">업로드</a></li>
-              <li role="presentation"><a href="sub_1_result.html">처리결과</a></li>
+              <li role="presentation"><a href="sub_1_upload.html">업로드</a></li>
+              <li role="presentation" class="active"><a href="sub_1_result.html">처리결과</a></li>
             </ul>
           <!-- </div> -->
          <!--  breadcrumbs --> 
@@ -91,7 +91,7 @@
           <ol class="breadcrumb">
             <li><a href="list.html">환자이름</a></li>
             <li>Cell Microscope</li>
-            <li>업로드</li>
+            <li>처리결과</li>
           </ol>
         <!-- </div> -->
      <!--  </div> -->
@@ -128,16 +128,31 @@
             </div>
           </div><!-- row end --><!-- 이미지 영역 end-->
        <!-- chart 영역 -->
-       <div class="container chart">
+       <div class="container chartgroup">
          <div class="row">
-            <div class="col-xs-2" id="chart">One</div>
-            <div class="col-xs-2 col-half-offset" id="chart">Two</div>
-            <div class="col-xs-2 col-half-offset" id="chart">Three</div>
-            <div class="col-xs-2 col-half-offset" id="chart">Four</div>
-            <div class="col-xs-2 col-half-offset" id="chart">Five</div>
+            <div class="col-md-2 col-xs-10" >
+              <div id="chart-bar1"></div>
+            </div>
+            <div class="col-md-2 col-half-offset col-xs-10">
+              <div id="chart-bar2"></div>
+            </div> 
+            <div class="col-md-2 col-half-offset col-xs-10">
+              <div id="chart-bar3"></div>
+            </div> 
+            <div class="col-md-2 col-half-offset col-xs-10">
+              <div id="chart-bar4"></div>
+            </div>
+            <div class="col-md-2 col-half-offset col-xs-10">
+              <div id="chart-bar5"></div>
+            </div>                                                                                     
+         </div>
          </div>         
            <h4>Key features</h4>
-           <p>Area, MaxIntensity, MeanIntensity, Roundness, Ratio of diameter</p> 
+           <span class="btn cell-tag">Area</span>
+           <span class="btn cell-tag">MaxIntensity</span>
+           <span class="btn cell-tag">MeanIntensity</span>
+           <span class="btn cell-tag">Roundness</span>
+           <span class="btn cell-tag">Ratio of diameter</span>
        </div> <!-- chart 영역 end-->
      </div> <!-- 2. contents end -->
 
@@ -160,8 +175,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script type="text/javascript" src="chart.js"></script>  
   </body>
 </html>
 

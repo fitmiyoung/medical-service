@@ -5,8 +5,8 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 200px;
+  /*콘텐츠와 풋터 사이 간격*/
+  margin-bottom: 250px;
   height: 100%;
 
 }
