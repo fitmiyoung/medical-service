@@ -95,7 +95,7 @@ body {
     line-height: 1.428571;
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
-    min-width: 208px;
+    min-width: 234px;
     text-align: center;
 }
 .breadcrumb {
@@ -363,6 +363,18 @@ a[onclick] {
 .m-sub-content .m-profile-data {
 	margin-bottom: 30px;
 }
+.btn-hover-none:hover {
+  color: #fff;
+  background-color: #ccc;
+}
+.btn-hover-done:hover {
+  color: #fff;
+  background-color: #43a047;	
+}
+.btn-hover-yet:hover {
+  color: #fff;
+  background-color: #1F6DE8;	
+}
 .m-profile {
 	padding-top: 27px;
 	padding-bottom: 0px;
@@ -465,7 +477,7 @@ a[onclick] {
     background-color: #eceff9;
 }
 .mr-text{
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 }
 
 /*chart css*/
@@ -492,4 +504,19 @@ a[onclick] {
     border-radius: 5px;
     margin-right: 9px;
     margin-top: 8px;    
+}
+/*.m-alert-info {
+    color: #3c763d;
+    border-color: #bce8f1;
+    width: 234px;
+}
+.m-alert {
+    padding: 7px 7px 7px 1px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}*/
+.label {
+	margin-bottom: 14px;
+	display: inline-block;
+	padding: 0.4em 1.2em 0.3em;
 }
