@@ -101,7 +101,10 @@
        <!-- 2.1 영상 파일 업로드  -->
        <h5><i class="fa fa-picture-o" aria-hidden="true"></i>영상 파일 업로드</h5>
        <form action="#" class="m-upload-box"> 
-          <input id="file-upload" type="file" name="pic"> 
+          <!-- 찾아보기 디자인, visibility: hidden해서 파일 업로드한 목록을 볼 수 없음.. -->
+          <label for="file-upload" class="custom-file-upload">
+          <i class="fa fa-cloud-upload"></i> 영상 파일 찾아보기
+          </label> 
           <input class="btn btn-primary"  type="submit" value="임시 저장">
           <input class="btn btn-primary" id="btn-process" type="button" value="처 리">
        </form> 
