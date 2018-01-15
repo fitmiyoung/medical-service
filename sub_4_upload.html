@@ -105,18 +105,23 @@
           <label for="file-upload" class="custom-file-upload">
           <i class="fa fa-cloud-upload"></i> 영상 파일 찾아보기
           </label> 
-          <input class="btn btn-primary"  type="submit" value="임시 저장">
-          <input class="btn btn-primary" id="btn-process" type="button" value="처 리">
+          <input id="file-upload" type="file"/>
+           <div class="row">
+              <div class="m-profile-submit">
+                  <a herf="#" class="btn btn-lightblue btn-primary col-xs-6">임시저장</a>
+                  <a herf="#" class="btn btn-blue btn-primary col-xs-6">처리 </a>
+              </div> 
+           </div> 
        </form> 
       <!-- 2.2 히스토리  -->
       <h5><i class="fa fa-history" aria-hidden="true"></i>업로드 히스토리 </h5>  
       <!-- 미완료 -->
       <div class="row m-history bg-yet yet">
-        <div class="col-xs-2">
+        <div class="col-sm-2">
           <h5><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</h5>
         </div>        
-        <div class="col-xs-7">
-          <h4 class="list-group-item-heading">업로드 파일: example_image_version_03.tif                   
+        <div class="col-sm-7">
+          <h4 class="list-group-item-heading">업로드 파일: example_image_v1.tif                   
               <label for="toggle-fin">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
               <input type="checkbox" id="toggle-fin"/>
               <ul id="m-fileopen-fin" >
@@ -128,7 +133,7 @@
           </h4>
           <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
         </div>
-        <div class="col-xs-3 ">
+        <div class="col-sm-3 ">
           <!--처리 클릭후 처리중 상태를 나타내는 회전 아이콘 보여주기-->
           <a class="btn btn-blue btn-primary" onclick=location.href="sub_4_result.html","_self"><i class="fa fa-play-circle" aria-hidden="true"></i>처 리</a> <!-- "_self" 현재창에서 열기 -->
         </div>
@@ -136,10 +141,10 @@
            
       <!-- 완료2 -->
       <div class="row m-history bg-done done">
-        <div class="col-xs-2">
+        <div class="col-sm-2">
           <h5><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</h5>
         </div>        
-        <div class="col-xs-7">
+        <div class="col-sm-7">
           <h4 class="list-group-item-heading">업로드 파일: example_image_version_04.tif                   
               <label for="toggle-done">&#8230;<i class="fa fa-folder-open-o" aria-hidden="true"></i></label>
               <input type="checkbox" id="toggle-done"/>
@@ -152,7 +157,7 @@
           </h4>
           <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
         </div>
-        <div class="col-xs-3 ">      
+        <div class="col-sm-3">      
           <a class="btn btn-green btn-primary" onclick=location.href="sub_4_result.html"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리결과</a>
         </div>
        </div>  

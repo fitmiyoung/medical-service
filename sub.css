@@ -136,16 +136,26 @@ body {
 	min-height: 186px;
 	margin-bottom: 68px
 }
+/*.m-upload-box > input[type="submit"] {
+	position: absolute;
+	right: 230px;
+	bottom: 0;
+	display: inline-block;
+}
+.m-upload-box > input[type="button"] {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: inline-block;
+}*/
+
 .m-upload-box > input[type="submit"] {
 /*	width: 250px;
 	height: 40px;
 	color: gray;
 	background-color: white;
 	border-radius: 3px;*/
-	/*float: right;*/
-	position: absolute;
-	right: 230px;
-	bottom: 0;
+	float: right;
 	display: inline-block;
 }
 .m-upload-box > input[type="button"] {
@@ -154,11 +164,9 @@ body {
 	color: gray;
 	background-color: white;
 	border-radius: 3px;*/
-	/*float: right;*/
-	position: absolute;
-	right: 0;
-	bottom: 0;
+	float: right;
 	display: inline-block;
+	margin-left: 10px;
 }
 /*기본 버튼 스타일*/
 .btn-lightblue {
@@ -216,7 +224,7 @@ form > .btn {
 	background-color: #F6F9FE;
 	border-color: #1F6DE8;
 	padding: 10px 30px 10px 30px;
-	margin: 42px;
+	margin-left: 22px;
 	color: #1F6DE8;
 }
 
@@ -305,12 +313,11 @@ a[onclick] {
 	background-color: #F6F9FE;
 	border-color: #1F6DE8;
 }
-.m-history .col-xs-3,
+/*.m-history .col-xs-3,
 .m-history .col-md-3{
   display: flex;
   justify-content: flex-end;
   padding: 25px 45px 25px 25px;
-/*  margin: 5px 0 5px;*/
 }
 .m-history .col-xs-7{
   padding: 25px;
@@ -322,14 +329,35 @@ a[onclick] {
 	color: black;
 }
 .m-history > .col-xs-2 {
-	/*height: 100%;*/
 	text-align: center;
-
 }
-.m-history > .col-xs-2 > h5 {
+.m-history > .col-xs-2 >  {
 	padding: 25px;
-/*	margin: 5px;*/
+}*/
+/*md*/
+.m-history .col-sm-3,
+.m-history .col-md-3{
+  display: flex;
+  justify-content: center;
+  padding: 25px 45px 25px 25px;
 }
+.m-history .col-sm-7{
+  padding: 25px;
+}
+.m-history .col-sm-7>p{
+  color: #939393;
+}
+.col-sm-7 > h4 {
+	color: black;
+}
+.m-history > .col-sm-2 {
+	text-align: center;
+}
+.m-history > .col-sm-2 > h5 {
+	padding: 25px 10px;
+}
+
+
 #m-fileopen, #m-fileopen-fin, #m-fileopen-done {
 	margin:0;
 	padding:0;
