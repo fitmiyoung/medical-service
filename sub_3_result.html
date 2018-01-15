@@ -104,7 +104,7 @@
        <!-- two tables -->
         <div class="table-responsive">
               <!-- top table -->
-              <table class="table table-bordered">
+              <table class="table table-bordered table-bordered-top">
                 <colgroup>
                     <col class="col-md-1 ">
                     <col class="col-md-1">
@@ -112,7 +112,7 @@
                     <col class="col-md-1">
                     <col class="col-md-1">
                 </colgroup>
-                <thead>
+                <thead >
                   <tr>
                     <th ></th>
                     <th >HCS_E</th>
@@ -121,9 +121,10 @@
                     <th >MRI</th>
                   </tr>
                 </thead>
+                <!-- second thead -->
                 <tbody>
                   <tr>
-                    <td >GBM10_022T</td>
+                    <td>GBM10_022T</td>
                     <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td class="active"></td>
                     <td class="active"></td>
@@ -147,13 +148,13 @@
                     <td>GBM13_022T</td>
                     <td class="active"></td>
                     <td class="active"></td>
-                    <td class="active"></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td class="active"></td>
                   </tr>
                   <tr>
                     <td >GBM10_022T</td>
                     <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="active"></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td class="active"></td>
                     <td class="active"></td>
                   </tr>
@@ -182,7 +183,7 @@
               </table> <!-- top table end --> 
               <!-- bottom table -->
               <div class="table-responsive">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-bordered-bottom">
                       <colgroup>
                           <col class="col-md-4 ">
                           <col class="col-md-4 ">
@@ -196,18 +197,26 @@
                       <tbody>
                         <tr>
                           <td>HCS &amp; 유전체 </td>
-                          <td>0.33</td>
+                          <td><span class="label label-primary">0.33</span></td>
                         </tr>
                         <tr>
                           <td>HCS &amp; MRI </td>
-                          <td>0.99</td>
+                          <td><span class="label label-success">0.99</span></td>
                         </tr>
                         <tr>
                           <td>유전체 &amp; MRI </td>
-                          <td>0.33</td>
+                          <td><span class="label label-warning">0.12</span></td>
                         </tr>
                       </tbody>
                    </table>
+                   <p> 유사도 범주에 따라 색으로 구분. 
+                    <ul>
+                      <li>초록색: 유사도 높음</li>
+                      <li>파란색: 유사도 낮음</li>
+                      <li>노란색: 유사도 매우 낮음</li>
+                    </ul>
+                    색으로 구분해도 괜찮을지 의견주세요.
+                  </p>
               </div> <!-- bottom table end-->   
         </div> <!-- twotable end -->          
     </div> <!-- 2. contents end -->
