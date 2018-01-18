@@ -567,3 +567,18 @@ a[onclick] {
 	font-size: 14px;
 	margin-bottom: 0;
 }
+/*datepicker의 placeholder와 동일하게 함*/
+.form-control::-moz-placeholder {
+  color: #555;
+  opacity: 1;
+}
+.form-control::-moz-placeholder {
+  color: #555;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #555;
+}
+.form-control::-webkit-input-placeholder {
+  color: #555;
+}

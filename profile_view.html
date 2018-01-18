@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- m's custom style -->
+    <link href="datepicker/daterangepicker.css" rel="stylesheet"> 
     <link href="list.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
     <link href="sub.css" rel="stylesheet">  
@@ -72,7 +73,8 @@
                 </div>                
                 <div class="col-md-6 col-xs-10 input-group">
                   <span class="input-group-addon" id="basic-addon1"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" placeholder="생년월일" aria-describedby="basic-addon1">
+                  <!-- <input type="text" class="form-control" placeholder="생년월일" aria-describedby="basic-addon1"> -->
+                  <input type="text" name="birthdate" value="01/01/1998" class="form-control" placeholder="생년월일">
                 </div>
             </div> <!-- col-md-8 end -->
             <div class="col-md-8">
@@ -195,5 +197,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Include Required Prerequisites -->
+ <!--    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="datepicker/moment.js"></script>
+
+     
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="datepicker/daterangepicker.js"></script>
+
+    <script src="etc.js"></script>
+
   </body>
 </html>
