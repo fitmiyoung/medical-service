@@ -52,19 +52,13 @@
     <!-- sub menu -->
       <nav class="m-sub-menu">
         <div class="container">
-            <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sub-nav" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button> -->
             <ul class="nav nav-pills nav-justified m-menu">
-              <li><a href="sub_1_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Cell Microscope</a></li>
-              <li class="active"><a href="sub_2_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>무형광 영상</a></li>
-              <li><a href="sub_3_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>유전체 발현량</a></li>
-              <li><a href="sub_4_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>판독문</a></li>
-              <li><a href="sub_5_upload.html"><i class="fa fa-picture-o" aria-hidden="true"></i>MR 영상</a></li>
-            </ul>    
+              <li class="m-sub-1 active"></li>
+              <li class="m-sub-2 "></li>
+              <li class="m-sub-3"></li>
+              <li class="m-sub-4"></li>
+              <li class="m-sub-5"></li>
+            </ul>     
         </div>
       </nav>      
     </nav>
@@ -72,7 +66,7 @@
     <!-- head & contents -->
     <!-- 1. head -->
     <div class="container m-sub-head">
-      <h1 class="">무형광 영상</h1>
+      <h1 class="">세포 명시야 현미경 영상</h1>
       <!-- 환자 정보 -->
       <div class="nav nav-pills m-person">
         <ul class="list-group">
@@ -96,7 +90,7 @@
         <!-- <div class="row"> -->
           <ol class="breadcrumb">
             <li><a href="list.html">환자이름</a></li>
-            <li>무형광 영상</li>
+            <li>세포 명시야 현미경 영상</li>
             <li>업로드</li>
           </ol>
         <!-- </div> -->
@@ -141,7 +135,7 @@
         </div>
         <div class="col-sm-3 ">
           <!--처리 클릭후 처리중 상태를 나타내는 회전 아이콘 보여주기-->
-          <a class="btn btn-blue btn-primary" onclick=location.href="sub_4_result.html","_self"><i class="fa fa-play-circle" aria-hidden="true"></i>처 리</a> <!-- "_self" 현재창에서 열기 -->
+          <a class="btn btn-blue btn-primary" onclick=location.href="sub_2_result.html","_self"><i class="fa fa-play-circle" aria-hidden="true"></i>처 리</a> <!-- "_self" 현재창에서 열기 -->
         </div>
        </div>  
            
@@ -164,7 +158,7 @@
           <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
         </div>
         <div class="col-sm-3">      
-          <a class="btn btn-green btn-primary" onclick=location.href="sub_4_result.html"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리결과</a>
+          <a class="btn btn-green btn-primary" onclick=location.href="sub_2_result.html"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리결과</a>
         </div>
        </div>  
       </div> 
@@ -190,6 +184,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="etc.js"></script>   
   </body>
 </html>
 

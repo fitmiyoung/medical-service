@@ -52,9 +52,20 @@
     </nav>
     <!-- top-button and search form -->
     <div class='container m-search form-inline'>
-        <a class="btn btn-success" href="profile_view.html" role="button "><i class="fa fa-plus" aria-hidden="true"></i>새 환자 등록</a>
-  
+        <a class="btn btn-m btn-success" href="profile_view.html" role="button "><i class="fa fa-plus" aria-hidden="true"></i>새 환자 등록</a>
+
+
         <div class="container-1">
+            <!-- search dropdown -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                검색설정 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">날짜</a></li>
+                <li><a href="#">ID</a></li>
+              </ul>
+            </div>    
             <span class="icon"><i class="fa fa-search"></i></span>
             <input type="search" id="search" placeholder="검색" />
         </div>
@@ -80,249 +91,289 @@
             <th >날짜</th>
             <th >환자</th>
             <th >완료여부</th>
-            <th >Cell Microscope</th>
-            <th >무형광 영상</th>            
-            <th >판독문</th>
-            <th >MR 영상</th>
-            <th >정밀진료결과</th>
+            <th >세포 형광 현미경 영상</th>
+            <th >세포 명시야 현미경 영상</th>            
+            <th >의료 영상 판독문</th>
+            <th >의료 영상 데이터 (MRI)</th>
+            <th >유전체 데이터</th>
             <th class='m-table-etc'>편집</th>
             <th class='m-table-etc'>삭제</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
             <td>미완료</td>
             <!-- 미완료 --> 
             <td class="yet">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
-            <!-- 완료 -->
-            <td class="done">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            <td class="yet">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
             <!-- 파일없음 -->
             <td class="nofile">
-                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
             </td>
             <td class="done">
                <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
             <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
-            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
-            </td>
-          </tr>
-          <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
-            <td>미완료</td>
-            <td class="yet">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
-            <td class="done">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
-            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
-            </td>
-          </tr>
-          <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
-            <td>미완료</td>
-            <td class="nofile">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
-            </td>
-            <td class="nofile">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
-            </td>
-            <td class="nofile">
-                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
-            </td>
-            <td class="nofile">
-                <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
-            </td>
-            <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
-            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
-            </td>
-          </tr>          
-          <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
-            <td>미완료</td>
-            <td class="done">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
-            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
-            </td>
-          </tr>          
-          <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
-            <td>미완료</td>
-            <td class="done">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class="done">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
-            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
-            </td>
-          </tr>
-          <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
-            <td>미완료</td>
-            <td class="yet">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
-            <td class="nofile">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
-            </td>
-            <td class="yet">
-                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
-            <td class="nofile">
-                <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
-            </td>
-            <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
             <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
             <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
             </td>
           </tr>            
           <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
             <td>미완료</td>
+            <!-- 미완료 --> 
             <td class="yet">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
+            <!-- 완료 -->
             <td class="done">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
-            <td class="done">
-               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            <!-- 파일없음 -->
+            <td class="nofile">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
             </td>
             <td class="done">
                <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
             <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
             <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
             <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
             </td>
           </tr>
           <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
             <td>미완료</td>
-            <td class="yet">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
+            <!-- 미완료 --> 
             <td class="yet">
                 <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
-            <td class="yet">
-                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            <!-- 완료 -->
+            <td class="done">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
             <td class="yet">
-                <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
-            <td class="yet">
-                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>                                    
             <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
             <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
             </td>
           </tr> 
           <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
-            <td>미완료</td>
-            <td class="yet">
-                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
-            </td>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
+            <td>완료</td>
             <td class="done">
                 <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
+            <!-- 완료 -->
             <td class="done">
-               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </td>
+          </tr>                    
+          <tr>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
+            <td>미완료</td>
+            <!-- 미완료 --> 
+            <td class="yet">
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <!-- 완료 -->
+            <td class="done">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <!-- 파일없음 -->
+            <td class="nofile">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
             </td>
             <td class="done">
                <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
             <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </td>
+          </tr>          
+          <tr>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
+            <td>완료</td>
+            <td class="done">
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <!-- 완료 -->
+            <td class="done">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
             <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
             <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
             </td>
           </tr>
           <tr>
-            <td>08/10/2017</td>
-            <td>Patient Serial</td>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
             <td>미완료</td>
+            <!-- 미완료 --> 
+            <td class="yet">
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
             <td class="yet">
                 <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
-            <td class="done">
-                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
-            </td>
             <td class="yet">
-                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
             <td class="done">
                <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
             </td>
             <td class="yet">
-               <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
             </td>
             <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
             <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
             </td>
-          </tr>                                                       
+          </tr>             
+          <tr>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
+            <td>완료</td>
+            <td class="done">
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <!-- 완료 -->
+            <td class="done">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="done">
+                <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </td>
+          </tr>  
+          <tr>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
+            <td>미완료</td>
+            <!-- 미완료 --> 
+            <td class="yet">
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class="yet">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <!-- 파일없음 -->
+            <td class="nofile">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
+            </td>
+            <td class="done">
+               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="yet">
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
+            <td>미완료</td>
+            <!-- 미완료 --> 
+            <td class="yet">
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <!-- 완료 -->
+            <td class="done">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <!-- 파일없음 -->
+            <td class="nofile">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-upload" id="icon-nofile" aria-hidden="true"></i>파일없음</span>
+            </td>
+            <td class="done">
+               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="yet">
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2018/01/21</td>
+            <td onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;">Patient no.</td>
+            <td>미완료</td>
+            <!-- 미완료 --> 
+            <td class="yet">
+                <span onclick=location.href="sub_2_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class="yet">
+                <span onclick=location.href="sub_1_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class="yet">
+                <span onclick=location.href="sub_5_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class="done">
+               <span onclick=location.href="sub_4_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-bar-chart" id="icon-done" aria-hidden="true"></i>완료</span>
+            </td>
+            <td class="yet">
+               <span onclick=location.href="sub_3_result.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-table" id="icon-yet" aria-hidden="true"></i>미완료</span>
+            </td>
+            <td class='m-table-etc' onclick=location.href="profile_view.html","_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+            <td class='m-table-etc' onclick=location.href="#,"_self" onmouseover="" style="cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </td>
+          </tr>                                                                  
         </tbody>
       </table>
     

@@ -553,19 +553,30 @@ a[onclick] {
     margin-top: 8px;    
 }
 .label {
-	margin-bottom: 14px;
+/*	margin-bottom: 14px;*/
 	display: inline-block;
-	padding: 0.4em 1.2em 0.3em;
+/*	padding: 0.4em 1.6em 0.5em;*/
+	padding: 0.4rem 2rem 0.5rem;
 }
 .table-bordered-bottom {
+	width: 100%;
 	text-align: center;
+	margin-bottom: 26px;
 }
 .table-bordered-bottom>colgroup+thead>tr:first-child>th {
 	text-align: center;	
+	font-size: 16px;
+	padding: 14px
+}
+.table-bordered-bottom tbody tr>td:first-child {
+	font-weight: bold;
+	font-size: 16px;
+	background-color: #eceff9; 
+	color: black;
 }
 .table-bordered-bottom td .label {
-	font-size: 14px;
-	margin-bottom: 0;
+	font-size: 18px;
+	margin: 20px;
 }
 /*datepicker의 placeholder와 동일하게 함*/
 .form-control::-moz-placeholder {
@@ -581,4 +592,12 @@ a[onclick] {
 }
 .form-control::-webkit-input-placeholder {
   color: #555;
+}
+
+.alert {
+	text-align: center;
+}
+.alert-total {
+	font-size: 18px;
+	padding: 22px;
 }

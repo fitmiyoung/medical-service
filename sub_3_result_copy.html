@@ -102,36 +102,114 @@
        <!-- 콘텐츠 영역 -->
        <!-- two tables -->
         <div class="table-responsive">
-          <table class="table table-bordered table-bordered-bottom">
-            <colgroup>
-                <col class="col-md-1 ">
-                <col class="col-md-1 ">
-                <col class="col-md-1 ">
-                <col class="col-md-1 ">
-            </colgroup>
-            <thead>
-              <tr>
-                <th></th>
-                <th>그룹 A</th>
-                <th>그룹 B</th>
-                <th>그룹 C</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>샘플 K</td>
-                <td><span class="label label-info">20%</span></td>
-                <td><span class="label label-success">70%</span></td>
-                <td><span class="label label-warning">10%</span></td>
-              </tr>
-            </tbody>
-         </table> 
-        </div>    
-       <div class="alert alert-success alert-total" role="alert">
-          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-          <span class="sr-only">Error:</span>
-          주어진 샘플 환자는 B그룹에 속하며  ABCDEFGH약을 처방하는 것을 권장합니다.
-       </div>              
+              <!-- top table -->
+              <table class="table table-bordered table-bordered-top">
+                <colgroup>
+                    <col class="col-md-1 ">
+                    <col class="col-md-1">
+                    <col class="col-md-1">
+                    <col class="col-md-1">
+                    <col class="col-md-1">
+                </colgroup>
+                <thead >
+                  <tr>
+                    <th ></th>
+                    <th >HCS_E</th>
+                    <th >HCS_O</th>
+                    <th >RPKM</th>
+                    <th >MRI</th>
+                  </tr>
+                </thead>
+                <!-- second thead -->
+                <tbody>
+                  <tr>
+                    <td>GBM10_022T</td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="active"></td>
+                    <td class="active"></td>
+                    <td class="active"></td>
+                  </tr>
+                  <tr>
+                    <td>GBM10_022T23</td>
+                    <td class="active"></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                    <td>GBM10_022T54</td>
+                    <td class="active"></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="active"></td>
+                  </tr>
+                  <tr>
+                    <td>GBM13_022T</td>
+                    <td class="active"></td>
+                    <td class="active"></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="active"></td>
+                  </tr>
+                  <tr>
+                    <td >GBM10_022T</td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="active"></td>
+                    <td class="active"></td>
+                  </tr>
+                  <tr>
+                    <td>GBM10_022T23</td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                    <td>GBM10_022T54</td>
+                    <td class="active"></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="active"></td>
+                  </tr>
+                  <tr>
+                    <td>GBM13_022T</td>
+                    <td class="active"></td>
+                    <td class="success"><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td class="active"></td>
+                    <td class="active"></td>
+                  </tr>                               
+                </tbody>
+              </table> <!-- top table end --> 
+              <!-- bottom table -->
+              <div class="table-responsive">
+                    <table class="table table-bordered table-bordered-bottom">
+                      <colgroup>
+                          <col class="col-md-4 ">
+                          <col class="col-md-4 ">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>군집 &amp; 군집</th>
+                          <th>군집 유사도 (MoC)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>HCS &amp; 유전체 </td>
+                          <td><span class="label label-primary">0.33</span></td>
+                        </tr>
+                        <tr>
+                          <td>HCS &amp; MRI </td>
+                          <td><span class="label label-success">0.99</span></td>
+                        </tr>
+                        <tr>
+                          <td>유전체 &amp; MRI </td>
+                          <td><span class="label label-warning">0.12</span></td>
+                        </tr>
+                      </tbody>
+                   </table>
+              </div> <!-- bottom table end-->   
+        </div> <!-- twotable end -->          
     </div> <!-- 2. contents end -->
    <!-- footer id="m-list-footer"-->
     <footer class="footer m-footer" >

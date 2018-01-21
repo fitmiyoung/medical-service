@@ -43,11 +43,14 @@ body {
 	color: white;
 	padding-right: 30px;
 }
-.btn {
+.btn-m {
 	font-size: 16px;
 	background-color: #6DC930;
 	border-color: none;
 	padding: 12px 52px 12px 30px;
+}
+.btn-grouop {
+  display: inline-block;
 }
 /*tables restyle*/
 .table {
@@ -140,25 +143,25 @@ td i {
 	margin-top: 11px;
 }
 .container-1{
-  width: 300px;
+/*  width: 300px;*/
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 .container-1 input#search{
   width: 300px;
-  height: 40px;
+  height: 34px;
   background: white;
   border: none;
-  border-bottom: 1px solid #B7B7B7;
+  border: 1px solid #cccccc;
   font-size: 10pt;
   float: left;
-/*  color: blue; ie에서 error남*/
   padding-left: 45px;
+  border-radius: 4px;
 }
 .container-1 .icon {
   position: absolute;
-  top: -17%;
+  top: -29%;
   left: 0;
   margin-left: 17px;
   margin-top: 17px;
@@ -175,7 +178,10 @@ td i {
     background: #fff;
     color: #000;
 }
-
+.btn-group {
+  position: absolute;
+  left: -99px;
+}
 /*tag*/
 .tag {
     float:left;
@@ -275,3 +281,10 @@ colgroup .col-md-0 {
 colgroup .col-md-a {
  	width: 3.9%;
  }
+.table-hover tbody>tr>td:nth-child(1),
+.table-hover tbody>tr>td:nth-child(3) {
+  font-weight: 200;
+}
+.table-hover tbody>tr>td:nth-child(2) {
+  font-weight: 400;
+}
