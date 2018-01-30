@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+  <style>
+  /* input[type="file"] {
+      visibility: hidden;
+  } */
+  .upload_hidden {
+    color: red;
+  }
+  .btn_search {
+    color: blue;
+    background-color: skyblue;
+  }
+  </style>
+</head>
+<body>
+<li class="box_info box_file">
+	<ul>
+		<li class="box_info">
+			<p class="tit_name">첨부파일</p>
+			<p><button type="button" id="" class="btn_add">추가입력 <span>+</span></button></p>
+		</li>
+		<li class="box_info">
+			<p class="tit_name txt-right">첨부1</p>
+			<div class="txt_input input_full">
+				<input class="upload_name" disabled="disabled">
+				<label for="fileName1" class="btn_search">찾아보기</label>
+				<button type="button" id="" class="btn_delete">삭제</button>
+				<input type="file" id="fileName1" class="upload_hidden">
+				<!-- 2017-10-23 마크업 추가 / 첨부 파일이 있는 경우에만 노출 -->
+				<div class="file_attach">
+					<span class="file_name">첨부파일<button type="button" class="btn_del"><span class="screen_out">삭제</span></button></span>
+				</div>
+				<!-- // 2017-10-23 마크업 추가 -->
+			</div>
+		</li>
+</ul>
+<script>
+	$(document).ready(function(){
+		var fileTarget = $('.box_file .upload_hidden');
+
+		fileTarget.on('change', function(){
+			if(window.FileReader){
+				var filename = $(this)[0].files[0].name;
+			} else {
+				var filename = $(this).val().split('/').pop().split('\\').pop();
+			}
+
+			$(this).siblings('.upload_name').val(filename);
+		});
+	});
+</script>
+</body>
+</html>

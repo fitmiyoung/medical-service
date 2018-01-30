@@ -1,3 +1,18 @@
+// 찾아보기
+$(document).ready(function(){
+    var fileTarget = $('.custom-file-upload');
+
+    fileTarget.on('change', function(){
+        if(window.FileReader){
+            var filename = $(this)[0].files[0].name;
+        } else {
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        }
+
+        // $(this).siblings('.upload_name').val(filename);
+    });
+});
+
 // sub-menu
 $(".m-sub-1").html("세포 명시야 현미경 영상").contents().wrap('<a href="sub_2_upload.html"> </a>');
 $(".m-sub-2").html("세포 형광 현미경 영상").contents().wrap('<a href="sub_1_upload.html"></a>');
