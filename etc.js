@@ -1,17 +1,17 @@
-// 찾아보기
-$(document).ready(function(){
-    var fileTarget = $('.custom-file-upload');
+// 찾아보기 custom design
+    $(document).ready(function(){
+        var fileTarget = $('.box_file .upload_hidden');
 
-    fileTarget.on('change', function(){
-        if(window.FileReader){
-            var filename = $(this)[0].files[0].name;
-        } else {
-            var filename = $(this).val().split('/').pop().split('\\').pop();
-        }
+        fileTarget.on('change', function(){
+            if(window.FileReader){
+                var filename = $(this)[0].files[0].name;
+            } else {
+                var filename = $(this).val().split('/').pop().split('\\').pop();
+            }
 
-        // $(this).siblings('.upload_name').val(filename);
+            $(this).siblings('.upload_name').val(filename);
+        });
     });
-});
 
 // sub-menu
 $(".m-sub-1").html("세포 명시야 현미경 영상").contents().wrap('<a href="sub_2_upload.html"> </a>');

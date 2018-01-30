@@ -102,17 +102,22 @@
        <!-- 2.1 파일 업로드  -->
        <h5><i class="fa fa-picture-o" aria-hidden="true"></i>파일 업로드</h5>
        <form action="#" class="m-upload-box"> 
-          <!-- 찾아보기 디자인, visibility: hidden해서 파일 업로드한 목록을 볼 수 없음.. -->
-          <label for="file-upload" class="custom-file-upload">
-          <i class="fa fa-cloud-upload"></i> 파일 찾아보기
-          </label>
-          <input id="file-upload" type="file"/>
-           <div class="row">
-              <div class="m-profile-submit">
-                  <a herf="#" class="btn btn-lightblue btn-primary col-xs-6">임시저장</a>
-                  <a herf="#" class="btn btn-blue btn-primary col-xs-6">처리 </a>
-              </div> 
-           </div> 
+        <!-- 찾아보기 custom design  -->
+         <div class="box_file txt_input input_full ">
+            <input class="upload_name custom-file-upload" disabled="disabled">
+            <label for="fileName1" class="btn_search custom-file-upload">  <i class="fa fa-cloud-upload"></i>찾아보기</label>
+            <input type="file" id="fileName1" class="upload_hidden">
+            <!-- 첨부 파일이 있는 경우에만 노출 -->
+            <div class="file_attach">
+              <span class="file_name">uploaded_file_name.png<a class="btn btn-del"><span class="screen_out ">삭제</span></a></span>
+            </div>
+         </div>
+         <div class="row">
+            <div class="m-profile-submit">
+                <a herf="#" class="btn btn-lightblue btn-primary col-xs-6">임시저장</a>
+                <a herf="#" class="btn btn-blue btn-primary col-xs-6">처리 </a>
+            </div> 
+         </div>           
        </form> 
        <!-- 2.2 히스토리  -->
       <h5><i class="fa fa-history" aria-hidden="true"></i>업로드 히스토리 </h5>  
@@ -159,7 +164,7 @@
           <p class="list-group-item-text">7:30, 2018/01/02, 삼성서울병원</p>
         </div>
         <div class="col-sm-3">      
-          <a class="btn btn-green btn-primary" onclick=location.href="sub_3_result.html"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리결과</a>
+          <a class="btn btn-green" onclick=location.href="sub_3_result.html"><i class="fa fa-pie-chart" aria-hidden="true"></i>처리결과</a>
         </div>
        </div>  
       </div> 
