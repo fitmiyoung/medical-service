@@ -74,28 +74,28 @@ html {
     }
 }
 .item:nth-child(1) {
-    background: url(img/8.jpg) no-repeat center center fixed;
+    background: url(img/img_1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .item:nth-child(2) {
-    background: url(img/13.jpg) no-repeat center center fixed;
+    background: url(img/img_2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .item:nth-child(3) {
-    background: url(img/16.jpg) no-repeat center center fixed;
+    background: url(img/img_3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .item:nth-child(4) {
-    background: url(img/6.jpg) no-repeat center center fixed;
+    background: url(img/img_4.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
