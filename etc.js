@@ -1,17 +1,3 @@
-//툴팁 
-var tooltip = document.getElementById("show-tip");
-
-var tooltips = [];
-tooltips.push(tooltip);
-
-for(var i=0; tooltips.length; i++){
-    tooltips[i].setAttribute('data-balloon-visible', '')
-    // tooltips.push(tooltip);
-}
-
-// const btn = document.getElementById('show-tip')
-// btn.setAttribute('data-balloon-visible', '')
-
 // 찾아보기 custom design
     $(document).ready(function(){
         var fileTarget = $('.box_file .upload_hidden');
