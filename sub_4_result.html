@@ -25,6 +25,7 @@
     <link href="list.css" rel="stylesheet">
     <link href="sub.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
+    <link href="balloon.css" rel="stylesheet">
 
   </head>
   <body>
@@ -102,8 +103,16 @@
        <!-- 2.1 영상 파일 업로드  -->
        <h6 class="label label-success"><i class="fa fa-check" aria-hidden="true"></i>처리 시간: 2018.01.12, 8:30 </h6>
        <!-- 콘텐츠 영역 -->
-       <div class="">
-         <img src="img/판독문_example.png" class="img-responsive">
+       <div class="ontology">
+         <p>
+          <span data-balloon="Diagnostic Body Part, Organ, or Organ Component" data-balloon-pos="up" id="show-tip" color="violet">Magnetic resonance imaging</span>
+         is a medical imaging technique used in 
+          <span data-balloon="Finding" data-balloon-pos="up" id="show-tip" color="red">radiology to form pictures</span> of the anatomy and the physiological processes of the <span data-balloon="Human" data-balloon-pos="up" id="show-tip" color="green">body</span> in both health and disease. <span data-balloon="Diagnostic Procedure" data-balloon-pos="up" id="show-tip" color="lightblue">MRI</span> scanners use strong magnetic fields, <span data-balloon="Diagnostic Procedure" data-balloon-pos="up" id="show-tip" color="gray">Magnetic resonance imaging</span> electric field gradients, and radio waves to generate images of  <span data-balloon="Human" data-balloon-pos="up" id="show-tip" color="green">the organs in the body.</span> MRI does not involve <span data-balloon="Tool, Hardware" data-balloon-pos="up" id="show-tip" color="brown">X-rays</span> and the use of <span data-balloon="Finding" data-balloon-pos="up" id="show-tip" color="red"> ionising radiation</span>, <span data-balloon="Diagnostic Procedure. Diagnostic Procedure.Diagnostic Procedure. Diagnostic Procedure." data-balloon-pos="up" id="show-tip" color="lightgreen">Magnetic resonance imaging</span> which <span data-balloon="Diagnostic Procedure" data-balloon-pos="up" id="show-tip" color="yellow">distinguishes</span> it from CT or CAT scans. <span data-balloon="Diagnostic Body Part, Organ, or Organ Component" data-balloon-pos="up" id="show-tip" color="darkgreen">the organs in the body.</span> <span data-balloon="Examples" data-balloon-pos="up" id="show-tip" color="blue">Magnetic resonance imaging </span> is a medical application of <span data-balloon="Diagnostic Procedure" data-balloon-pos="up" id="show-tip" color="lightblue">nuclear magnetic resonance (NMR)</span>
+         
+         
+         
+         
+       </p>
        </div>           
     </div> <!-- 2. contents end -->
    <!-- footer id="m-list-footer"-->
@@ -126,6 +135,18 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="etc.js"></script>
+    <script>
+  // const btn = document.getElementById('show-tip')
+  // btn.setAttribute('data-balloon-visible', '')
+  
+  // show-tip 있는 것 다 찾아서 다 바꿔주기 스크립트로 수정하기 
+  // empty string ' ' means data-balloon-visible is true
+    // const tooltips = document.getElementById('show-tip');
+    // for(var i=0; tooltips.length; i++){
+    //     tooltips[i].setAttribute('data-balloon-visible', '')
+    // }    
+
+    </script>
   </body>
 </html>
 
