@@ -4,26 +4,12 @@ html {
     min-height: 100%;
 }
 p {
-  text-align: left;
-  /* text-align: center; */
+  text-align: center;
   font-size: 34px;
-  margin-top: 400px;
-  margin-left: 100px;
-  padding-right: 500px;
-  padding: 20px;
+  margin-top: 600px;
+  padding: 16px;
   text-shadow: 2px 2px #000;
-  color: #FFF;
-}
-.title{
-  text-align: left;
-  /* text-align: center; */
-  font-size: 34px;
-  margin-top: 400px;
-  margin-left: 100px;
-  padding-right: 500px;
-  padding: 20px;
-  text-shadow: 2px 2px #000;
-  color: #FFF;
+  color: #fff;
 }
 /* p {
   text-align: left;
@@ -35,9 +21,9 @@ p {
   color: #FFF;
 } */
 
-.main-content {
+/* .main-content {
   min-height: 1000px;
-}
+} */
 .body-head {
   line-height: 240%;
   color: white;
@@ -187,12 +173,14 @@ p {
 .form-top {
 	overflow: auto;
 	padding: 120px 25px 15px 25px;
-	background: #444;
-	background: rgba(0, 0, 0, 0.35);
+	/* background: rgba(0, 0, 0, 0.35); */
 	text-align: center;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+  color: white;
+  text-shadow: 2px 2px #000;
+
 }
 .form-box img {
 	margin-left: auto;
@@ -201,11 +189,11 @@ p {
 
 .form-bottom {
 	/*padding: 48px 48px 280px 48px;*/
-	padding: 39px 9% 100% 9%;
+	padding: 26px 32%;
 	max-width: 100%;
 	height: auto;
-	background: #444;
-	background: rgba(0, 0, 0, 0.35);
+	/* background: #444;
+	background: rgba(0, 0, 0, 0.35); */
 	text-align: left;
 
 }
@@ -229,20 +217,38 @@ p {
 .form-control {
   display: block;
   width: 100%;
-  height: 36px;
+  height: 38px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.789;
-  color: #555;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #18181866;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #fbfbfb80;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, .095);
+          box-shadow: inset 0 2px 2px rgba(0, 0, 0, .095);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control::-moz-placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #efefef;
+}
+.form-control::-webkit-input-placeholder {
+  color: #efefef;
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #5396fc;
+    text-decoration: none;
+}
+.form-control:focus {
+    border-color: #fff;
+    background-color: #000000b3;
 }
 .checkbox {
 	color: white;
