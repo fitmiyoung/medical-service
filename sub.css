@@ -637,4 +637,8 @@ a[onclick] {
 }  
 .fa.fa-folder-open-o:hover {
     color: black;
+}
+
+.m-textinput {
+	padding-top: 32px;
 }    
