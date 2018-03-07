@@ -37,7 +37,7 @@ body {
 }
 .m-search {
   min-height: 46px;
-  margin-bottom: 27px;
+  margin-bottom: 40px;
 }
 .m-search > a > i {
 	color: white;
@@ -62,18 +62,26 @@ body {
     vertical-align: middle;
     border-bottom: 1px solid #ddd;
 }
+#table-head {
+    line-height: 0;
+    margin-bottom: -8px;
+    font-size: 11px;
+}
 .table>thead>tr>th {
     vertical-align: bottom;
     border-bottom: 1px solid #B7B7B7;
+    line-height: 1.5;
 /*    background-color: yellow;
 */
 }
+
 table > tbody {
 	color: #636363;
 }
 table th {
   font-size: 12px;
 }
+
 #icon-yet {
   background-color: #0057A7;
   padding: 3px;

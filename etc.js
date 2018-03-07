@@ -1,3 +1,8 @@
+//balloon click function
+//z-index 11 이상으로만 올리면 됩니다. 현재 툴팁 디폴트 z-index는 10 입니다. 
+function balloonFunction() {
+    document.getElementById("show-tip").style.zIndex = "11";
+}
 // 찾아보기 custom design
     $(document).ready(function(){
         var fileTarget = $('.box_file .upload_hidden');
