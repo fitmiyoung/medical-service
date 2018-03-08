@@ -103,27 +103,65 @@
        <h6 class="label label-success"><i class="fa fa-check" aria-hidden="true"></i>처리 시간: 2018.01.12, 8:30 </h6>
        <!-- 이미지 영역 -->
           <div class="row">
-            <div class="col-sm-6 col-md-4">
+<!--             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <img src="img/cell_example.png" alt="세포 형광 현미경 영상">
                 <div class="caption">
                   <p>Original image (10x)<a href=""><i class="fa fa-search-plus fa-x3" aria-hidden="true"></i></a></p> 
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
+            </div> -->
+            <div class="col-md-4">
               <div class="thumbnail">
                 <img src="img/cell_example.png" alt="세포 형광 현미경 영상">
                 <div class="caption">
-                  <p>Stitched  image (10x)<a href=""><i class="fa fa-search-plus fa-x3" aria-hidden="true"></i></a></p> 
+                  <p>Stitched  image (10x)<a type="button" data-toggle="modal" data-target="#10x"><i class="fa fa-search-plus fa-x3" aria-hidden="true"></i></a></p>
+                   <!-- modal -->
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="10x">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Stitched image (10x)</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>image 여기에 입력하세요~</p>
+                            <img src="img/cell_example.png" width="100%">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div><!-- /.modal-content -->
+                      </div>
+                    </div>
+                   <!-- modal end -->
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-md-8">
               <div class="thumbnail">
                 <img src="img/cell_example.png" alt="세포 형광 현미경 영상">
                 <div class="caption">
-                  <p>Stitched image (20x)<a href=""><i class="fa fa-search-plus fa-x3" aria-hidden="true"></i></a></p> 
+                  <p>Stitched image (20x)<a type="button" data-toggle="modal" data-target="#20x"><i class="fa fa-search-plus fa-x3" aria-hidden="true"></i></a></p>
+                  <!-- modal -->
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="20x">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Stitched image (20x)</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>image 여기에 입력하세요~ 2</p>
+                            <img src="img/cell_example.png" width="100%">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div><!-- /.modal-content -->
+                      </div>
+                    </div>
+                   <!-- modal end -->
                 </div>
               </div>
             </div>
