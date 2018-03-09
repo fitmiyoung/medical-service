@@ -15,22 +15,6 @@ body {
 	left: 0;
 	z-index: 999;
 }
-/*서브 메뉴의 nav-justified 메뉴가 본문을 가리지 않도록 media를 이용함*/
-@media (max-width: 991px) {
-	.m-sub-head {
-		margin-top: 40px;
-	}
-}	
-@media (max-width: 767px) {
-  .m-sub-head {
-  	margin-top: 270px;
-  }
-}
-@media (max-width: 574px) {
-  .m-sub-head {
-  	margin-top: 320px;
-  }
-}
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
@@ -99,6 +83,38 @@ body {
     min-width: 234px;
     text-align: center;
 }
+
+
+@media (max-width: 767px) {
+  .m-sub-head {
+  	margin-top: 0px;
+  	padding-top: 39px;
+  }
+  .m-menu {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+  }
+  .m-menu>li {
+  	flex: 1;
+  	padding: 11px;
+  }
+  .nav-justified>li>a {
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  .nav-pills>li>a {
+    border-radius: 5px;
+    padding: 7px;
+  }      
+}
+@media (max-width: 574px) {
+  /*서브 메뉴의 nav-justified 메뉴가 본문을 가리지 않도록 media를 이용함*/
+  .m-sub-head {
+  	margin-top: 30px;
+  	padding-top: 60px;
+  }
+} 
 .breadcrumb {
   float: right;
   padding: 20px 0px 0px 15px;
