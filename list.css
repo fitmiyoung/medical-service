@@ -277,14 +277,17 @@ td i {
 
 
 /*colgroup: miyoung's custom*/
+/*날짜 & 데이터 칼럼*/
 colgroup .col-md-1 {
- 	width: 9%;
+ 	width: 10%;
  }
+ /* 그 외*/
 colgroup .col-md-0 {
- 	width: 6.7%;
+ 	width: 8%;
  }
+ /*편집 & 삭제 칼럼 칼*/
 colgroup .col-md-a {
- 	width: 3%;
+ 	width: 3.9%;
  }
 .table-hover tbody>tr>td:nth-child(1),
 .table-hover tbody>tr>td:nth-child(3) {
