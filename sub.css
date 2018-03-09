@@ -13,7 +13,7 @@ body {
 	position: fixed;
 	right: 0;
 	left: 0;
-	z-index: 1030;
+	z-index: 999;
 }
 /*서브 메뉴의 nav-justified 메뉴가 본문을 가리지 않도록 media를 이용함*/
 @media (max-width: 991px) {

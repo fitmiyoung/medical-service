@@ -7,9 +7,7 @@ body {
   padding-top: 35px;
   background-color: #0D47A1;
 }
-.dropdown {
-  z-index: 100;
-}
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav>li .dropdown:hover  {
@@ -25,6 +23,7 @@ body {
     position: relative;
     display: block;
     padding: 10px 15px;
+    line-height: 0;
 }    
 .navbar-default .navbar-brand {
 	color: #fff;
