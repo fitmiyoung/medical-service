@@ -75,7 +75,8 @@ table > tbody {
 	color: #636363;
 }
 table th {
-  font-size: 12px;
+  font-size: 11px;
+/*  letter-spacing: -1px;*/
 }
 
 #icon-yet {
@@ -277,13 +278,13 @@ td i {
 
 /*colgroup: miyoung's custom*/
 colgroup .col-md-1 {
- 	width: 10%;
- }
-colgroup .col-md-0 {
  	width: 9%;
  }
+colgroup .col-md-0 {
+ 	width: 6.7%;
+ }
 colgroup .col-md-a {
- 	width: 3.9%;
+ 	width: 3%;
  }
 .table-hover tbody>tr>td:nth-child(1),
 .table-hover tbody>tr>td:nth-child(3) {
