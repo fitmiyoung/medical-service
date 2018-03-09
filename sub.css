@@ -43,11 +43,12 @@ body {
     border-color: #0D47A1; 
 }
 .nav-pills>li>a {
-    border-radius: 0px;
+	border-radius: 0px;
     padding: 23px 0 23px 0; 
 }
 .m-menu>li>a {
 	color: rgba(255,255,255,0.5);
+	line-height: 20px;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: white;
