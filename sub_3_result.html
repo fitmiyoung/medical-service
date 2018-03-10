@@ -108,31 +108,101 @@
                 <col class="col-md-1 ">
                 <col class="col-md-1 ">
                 <col class="col-md-1 ">
-                <col class="col-md-1 ">
             </colgroup>
             <thead>
               <tr>
                 <th></th>
                 <th>그룹 A</th>
                 <th>그룹 B</th>
-                <th>그룹 C</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>샘플 K</td>
-                <td><span class="label label-info">20%</span></td>
-                <td><span class="label label-success">70%</span></td>
-                <td><span class="label label-warning">10%</span></td>
+                <td>본 환자의 해당 그룹 소속확률값</td>
+                <td><span class="label label-success">72.69%</span></td>
+                <td><span class="label label-info ">27.31%</span></td>
               </tr>
+              <tr>
+                <td>그룹별로 항암 감수성이 <br />높은 처방 약물들 순위 </td>
+                <td id="inner-table">               
+                    <!-- 그룹A table -->
+                    <table class="table table-a table-striped table-condensed" >
+                      <tr>
+                        <td>순위</td>
+                        <td>약물이름</td>
+                        <td>유의도</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td id="drug">AUY922</td>
+                        <td id="significance">&lt;0.05</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Sunitinib</td>
+                        <td id="significance">&lt;0.05</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Cediranib</td>
+                        <td id="significance">&lt;0.05</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Pazopanib</td>
+                        <td>&lt;0.1</td>
+                      </tr> 
+                      <tr>
+                        <td>5</td>
+                        <td>Neratinib</td>
+                        <td>&lt;0.1</td>
+                      </tr>
+                    </table><!-- 그룹A table end -->
+                 </td>
+                 <td id="inner-table">
+                    <!-- 그룹B table -->
+                    <table class="table table-b table-striped table-condensed">
+                      <tr>
+                        <td>순위</td>
+                        <td>약물이름</td>
+                        <td>유의도</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>ABT-888</td>
+                        <td>0.14</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td id="drug">AUY922</td>
+                        <td>0.15</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Lapatinib</td>
+                        <td>0.14</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Pazopanib</td>
+                        <td>0.14</td>
+                      </tr> 
+                      <tr>
+                        <td>5</td>
+                        <td>LGK-974</td>
+                        <td>0.14</td>
+                      </tr>  
+                      <tr>
+                        <td>6</td>
+                        <td>Dacomitinib</td>
+                        <td>0.14</td>
+                      </tr>                         
+                    </table><!-- 그룹B table end -->    
+                 </td>
+              </tr>              
             </tbody>
          </table> 
-        </div>    
-       <div class="alert alert-success alert-total" role="alert">
-          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-          <span class="sr-only">Error:</span>
-          주어진 샘플 환자는 B그룹에 속하며  ABCDEFGH약을 처방하는 것을 권장합니다.
-       </div>              
+        </div>                
     </div> <!-- 2. contents end -->
    <!-- footer id="m-list-footer"-->
     <footer class="footer m-footer" >
