@@ -119,7 +119,7 @@
             <tbody>
               <tr>
                 <td>본 환자의 해당 그룹 소속확률값</td>
-                <td><span class="label label-success">72.69%</span></td>
+                <td><span class="label label-highpossible">72.69%</span></td>
                 <td><span class="label label-info ">27.31%</span></td>
               </tr>
               <tr>
@@ -128,34 +128,34 @@
                     <!-- 그룹A table -->
                     <table class="table table-a table-striped table-condensed" >
                       <tr>
-                        <td>순위</td>
-                        <td>약물이름</td>
-                        <td>유의도</td>
+                        <td scope="col">순위</td>
+                        <td scope="col">약물이름</td>
+                        <td scope="col">유의도</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td id="drug">AUY922</td>
-                        <td id="significance">&lt;0.05</td>
+                        <td data-sig="0.05">&lt;0.05</td>
                       </tr>
                       <tr>
                         <td>2</td>
-                        <td>Sunitinib</td>
-                        <td id="significance">&lt;0.05</td>
+                        <td >Sunitinib</td>
+                        <td data-sig="0.05">&lt;0.05</td>
                       </tr>
                       <tr>
                         <td>3</td>
                         <td>Cediranib</td>
-                        <td id="significance">&lt;0.05</td>
+                        <td data-sig="0.05">&lt;0.05</td>
                       </tr>
                       <tr>
                         <td>4</td>
                         <td>Pazopanib</td>
-                        <td>&lt;0.1</td>
+                        <td data-sig="0.1">&lt;0.1</td>
                       </tr> 
                       <tr>
                         <td>5</td>
-                        <td>Neratinib</td>
-                        <td>&lt;0.1</td>
+                        <td>Neratinib </td>
+                        <td data-sig="0.1">&lt;0.1</td>
                       </tr>
                     </table><!-- 그룹A table end -->
                  </td>
@@ -163,9 +163,9 @@
                     <!-- 그룹B table -->
                     <table class="table table-b table-striped table-condensed">
                       <tr>
-                        <td>순위</td>
-                        <td>약물이름</td>
-                        <td>유의도</td>
+                        <td scope="col">순위</td>
+                        <td scope="col">약물이름</td>
+                        <td scope="col">유의도</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -194,7 +194,7 @@
                       </tr>  
                       <tr>
                         <td>6</td>
-                        <td>Dacomitinib</td>
+                        <td>Dacomitinib 약 이름 길어질 때 2줄 이상 늘어나면서도 가로 길이 고정</td>
                         <td>0.14</td>
                       </tr>                         
                     </table><!-- 그룹B table end -->    

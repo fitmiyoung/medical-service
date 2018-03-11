@@ -616,36 +616,60 @@ a[onclick] {
 }
 .table-bordered-bottom td .label {
 	font-size: 24px;
-	margin: 32px;
+	margin: 30px;
+	padding: 18px 24px;
+	border-radius: 3em;
 }
 /*tables inside of table*/
-.table-a, .table-b {
-	width: 100%;
-}
 #inner-table {
 	vertical-align: top;
 	padding: 0px;
+}
+.table-a, .table-b {
+	width: 100%;
 }
 #inner-table>table {
 	margin-bottom: 0px;			
 }
 #inner-table>table>tbody {
-	color: #3A3D67;	
+	color: #7b8696;	
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f7f9fb;
+}
+.table-a tr td:nth-of-type(2),
+.table-b tr td:nth-of-type(2){
+	color: #000;
+	width: 190px;
+	table-layout: fixed;
+	word-break: break-all;
+	line-height: 1.2;
 }
 /*그룹 A,B 둘 다 일치하는 약물 이름 강조*/
 #drug {
 	font-weight: bold;
 	color: #0e47a1;
 }
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f7f9fb;
-}
-/*.table-a tr td:nth-of-type(3){
-	color: #cc225e;
-}*/
 /*유의수준 0.05 이하인 것은 빨간색으로 강조*/
 #significance {
 	color: #c11713;
+	font-style: italic;	
+}
+[data-sig="0.1"] {
+	font-style: normal;	
+}
+/*.table-a [scope="col"] {
+    color: #1f1f1f;
+    font-style: bold;
+    background-color: #efe;
+}
+.table-b [scope="col"] {
+    color: #1f1f1f;
+    font-style: bold;
+    background-color: #eaf6fa;
+}*/
+.label-highpossible {
+    background-color: #5cb85c;
 }
 /*datepicker의 placeholder와 동일하게 함*/
 .form-control::-moz-placeholder {
