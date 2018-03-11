@@ -106,7 +106,7 @@ body {
   .nav-pills>li>a {
     border-radius: 5px;
     padding: 7px;
-  }      
+  }       
 }
 @media (max-width: 574px) {
   /*서브 메뉴의 nav-justified 메뉴가 본문을 가리지 않도록 media를 이용함*/
@@ -651,7 +651,7 @@ a[onclick] {
 	color: #0e47a1;
 }
 /*유의수준 0.05 이하인 것은 빨간색으로 강조*/
-#significance {
+[data-sig="0.05"] {
 	color: #c11713;
 	font-style: italic;	
 }
