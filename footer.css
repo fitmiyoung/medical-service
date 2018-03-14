@@ -43,8 +43,9 @@ footer img {
 	width: 80%;
 }
 .m-footer h6 {
-	color: #86A3D0;
-}
+    color: rgba(134, 163, 208, 0.8);
+    padding-left: 76px;
+    margin-top: 0;
 /*@media screen and (max-width: 970px) {
 	.footer {
 	  position: absolute;
