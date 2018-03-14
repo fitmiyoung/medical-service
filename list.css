@@ -346,3 +346,6 @@ colgroup .col-md-a {
     background-color: #0e47a1;
     border-color: #0e47a1;
 }
+.navbar-brand > img {
+    height: 40px;
+}
